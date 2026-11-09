@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bar El Populacho · Propuesta de diseño</title>
+<meta name="description" content="Propuesta de diseño de web para Bar El Populacho preparada por DATOR WebDesign. No es la web oficial.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f5ef;--bg2:#dfe6d6;--ink:#16231a;--muted:#566357;--acc:#1f6b45;--acc2:#d9a441;--on-acc:#ffffff;--line:#d2dbc8;--card:#fbfcf8;
+--fd:'Josefin Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--fb:'Lato',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:6px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.demo-band{background:#111;color:#fff;font:600 11.5px/1.35 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:.02em;text-align:center;padding:7px 12px}
+.demo-band b{color:#ffd166}
+header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 20px;min-height:62px}
+.logo-img{height:44px;width:auto;border-radius:8px}
+.logo-txt{font-family:var(--fd);font-size:23px;font-weight:700;letter-spacing:.01em;white-space:nowrap}
+.nav-links{display:flex;gap:22px;margin-left:auto;font-weight:600;font-size:14.5px}
+.nav-links a{text-decoration:none;opacity:.85}.nav-links a:hover{opacity:1;color:var(--acc)}
+.langs{display:flex;gap:4px;margin-left:8px}
+.langs button{border:1px solid var(--line);background:transparent;color:var(--ink);font:700 11px var(--fb);padding:5px 7px;border-radius:6px;cursor:pointer}
+.langs button.on{background:var(--ink);color:var(--bg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s;font-family:var(--fb)}
+.btn:hover{transform:translateY(-1px)}
+.btn-acc{background:var(--acc);color:var(--on-acc);box-shadow:0 8px 24px -10px var(--acc)}
+.btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(4px)}
+.nav .btn{padding:10px 18px;font-size:14px}
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:zoom 18s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.25) 40%,rgba(0,0,0,.78) 100%)}
+.hero-in{position:relative;z-index:2;max-width:1180px;margin:0 auto;width:100%;padding:0 20px 64px}
+.kicker{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.35);padding:6px 12px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-family:var(--fd);font-size:clamp(40px,7.4vw,86px);line-height:1;font-weight:700;letter-spacing:-.01em;max-width:13ch}
+.hero .sub{font-size:clamp(17px,2.2vw,21px);max-width:44ch;margin:16px 0 26px;opacity:.95}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.rating{margin-top:22px;font-size:14.5px;opacity:.95}.rating .star{color:#ffd166}.rating .src{opacity:.75;font-size:12.5px;margin-left:4px}
+.ph-tag{position:absolute;right:10px;bottom:10px;z-index:3;background:rgba(0,0,0,.55);color:#fff;font:600 10.5px system-ui,sans-serif;padding:4px 8px;border-radius:6px;letter-spacing:.04em}
+.hero .ph-tag{top:12px;bottom:auto}
+section{padding:84px 20px}
+.wrap{max-width:1180px;margin:0 auto}
+.eyebrow{color:var(--acc);font-weight:800;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-weight:700;margin-bottom:14px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:60ch;font-size:17px}
+.hls{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px}
+.hl{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.hl-ico{font-size:28px;margin-bottom:12px}
+.hl h3{font-family:var(--fd);font-size:21px;margin-bottom:6px}
+.hl p{color:var(--muted);font-size:15px}
+.menu-sec{background:var(--bg2)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 14px;margin:28px 0 10px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 18px;border-radius:999px;font:700 14px var(--fb);cursor:pointer;white-space:nowrap}
+.tab.on{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.panel{display:none;list-style:none;columns:2;column-gap:56px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px 32px}
+.panel.on{display:block;animation:fade .35s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.panel li{break-inside:avoid;padding:12px 0;border-bottom:1px dashed var(--line)}
+.it-top{display:flex;align-items:baseline;gap:10px}
+.it-name{font-weight:700}
+.dots{flex:1;border-bottom:1px dotted var(--muted);opacity:.35;transform:translateY(-4px);min-width:12px}
+.it-price{font-weight:800;color:var(--acc);white-space:nowrap}
+.desc{color:var(--muted);font-size:14px;margin-top:2px}
+.orient-note{margin-top:16px;font-size:13.5px;color:var(--muted)}
+.pill{display:inline-block;background:var(--acc2);color:var(--ink);font-weight:800;font-size:11px;padding:3px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase;margin-right:6px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px;margin-top:34px}
+.g{position:relative;overflow:hidden;border-radius:var(--r);background:var(--bg2)}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.g:hover img{transform:scale(1.05)}
+.g:nth-child(1){grid-column:span 2;grid-row:span 2}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.rev-stars{color:#f5b301;letter-spacing:2px;margin-bottom:10px}
+.rev p{font-family:var(--fd);font-size:20px;line-height:1.35}
+.rev cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:13.5px}
+.rev.empty{grid-column:1/-1;text-align:center;color:var(--muted);border-style:dashed}
+.book{background:var(--ink);color:var(--bg)}
+.book .lead{color:color-mix(in srgb,var(--bg) 75%,transparent)}
+.book-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+form.bk{background:var(--card);color:var(--ink);border-radius:calc(var(--r) + 6px);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+form.bk label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:13px}
+form.bk .full{grid-column:1/-1}
+form.bk input,form.bk select{font:500 16px var(--fb);padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+form.bk .btn{grid-column:1/-1;margin-top:4px}
+.bk-msg{grid-column:1/-1;font-size:14px;color:var(--muted);min-height:1em}
+.info-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;margin-top:34px;align-items:stretch}
+table.hours{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+table.hours td{padding:12px 18px;border-bottom:1px solid var(--line)}
+table.hours td:last-child{text-align:right;font-weight:700}
+table.hours tr.today td{background:color-mix(in srgb,var(--acc) 12%,transparent)}
+.addr{margin-top:18px;font-size:15.5px}
+.addr b{display:block;font-family:var(--fd);font-size:20px}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--bg2)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+.final{text-align:center;background:var(--acc);color:var(--on-acc)}
+.final h2{font-size:clamp(36px,6vw,66px)}
+.final .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.final .lead{color:var(--on-acc);opacity:.9;margin:0 auto}
+.final .btn-w{background:var(--on-acc);color:var(--acc)}
+.final .btn-o{border:2px solid var(--on-acc);color:var(--on-acc);background:transparent}
+footer{padding:34px 20px 110px;text-align:center;font-size:13px;color:var(--muted);background:var(--bg)}
+footer .dator{display:inline-flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:6px 10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink)}
+footer .dator span a{font-weight:700}
+footer .dator svg{border-radius:7px;flex:0 0 auto}
+footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero img.bg{animation:none}}
+@media (max-width:860px){
+ .nav-links,.nav .btn{display:none}
+ .langs{margin-left:auto}
+ section{padding:64px 18px}
+ .panel{columns:1;padding:18px 18px}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+ .book-grid,.info-grid{grid-template-columns:1fr}
+ form.bk{grid-template-columns:1fr 1fr;padding:20px}
+ .hero{min-height:78vh}
+ .hero-in{padding-bottom:44px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;background:color-mix(in srgb,var(--ink) 92%,transparent);backdrop-filter:blur(8px);padding:8px;border-radius:18px;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+ .mbar a{display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 6px;border-radius:12px;color:var(--bg);text-decoration:none;font-weight:700;font-size:14px}
+ .mbar a.main{background:var(--acc);color:var(--on-acc)}
+}
+@media (max-width:380px){.logo-txt{font-size:19px}.mbar a{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="demo-band"><b>PROPUESTA DE DISEÑO</b> · No es la web oficial de Bar El Populacho · Fotos y precios provisionales</div>
+<header class="nav"><div class="nav-in">
+ <a href="#top" style="text-decoration:none"><span class="logo-txt">El Populacho</span></a>
+ <nav class="nav-links"><a href="#carta"><span data-t-es="Carta" data-t-en="Menu" data-t-de="Speisekarte">Carta</span></a><a href="#opiniones"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></a><a href="#info"><span data-t-es="Horario" data-t-en="Hours" data-t-de="Öffnungszeiten">Horario</span></a></nav>
+ <a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a>
+ 
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <img class="bg" src="https://images.unsplash.com/photo-1777370439912-36530f455877?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span>
+ <div class="hero-in">
+  <span class="kicker">Bar de tapas · Plaza del Rosario, Agüimes</span>
+  <h1>El Populacho</h1>
+  <p class="sub">Ropa vieja de garbanzas, croquetas de cocido y queso de Agüimes en una antigua tienda de ultramarinos de 1933.</p>
+  <div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div>
+  <div class="rating"><b>4,5</b> <span class="star">★</span> · 1.954 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div>
+ </div>
+</section>
+
+<section><div class="wrap">
+ <p class="eyebrow">Desde la tienda de 1933</p>
+ <h2>El bar de la plaza</h2>
+ <p class="lead">En una esquina de la plaza del Rosario, donde estuvo una tienda de ultramarinos de 1933: murales que cuentan su historia, la barra verde y lámparas art déco. Desayunos, barraquitos y tapas canarias para todo el pueblo. Terraza y acceso adaptado.</p>
+ <div class="hls"><div class="hl reveal"><div class="hl-ico">🫘</div><h3>Ropa vieja de garbanzas</h3><p>Pide media: la ración es grande.</p></div><div class="hl reveal"><div class="hl-ico">🧀</div><h3>Queso de Agüimes</h3><p>Frito, con mermelada.</p></div><div class="hl reveal"><div class="hl-ico">🏛️</div><h3>Historia en las paredes</h3><p>Murales de la antigua tienda de 1933.</p></div></div>
+</div></section>
+
+<section class="menu-sec" id="carta"><div class="wrap">
+ <p class="eyebrow"><span data-t-es="Carta" data-t-en="Menu" data-t-de="Speisekarte">Carta</span></p>
+ <h2 data-t-es="Nuestra carta" data-t-en="Our menu" data-t-de="Unsere Speisekarte">Nuestra carta</h2>
+ <div class="tabs" role="tablist"><button class="tab on" data-tab="0"><span>Tapas</span></button><button class="tab" data-tab="1"><span>Platos</span></button><button class="tab" data-tab="2"><span>Café y dulces</span></button></div>
+ <ul class="panel on" data-panel="0"><li><div class="it-top"><span class="it-name">Croquetas de cocido</span><span class="dots"></span><span class="it-price">7,50 €</span></div></li><li><div class="it-top"><span class="it-name">Albóndigas de cerdo ibérico</span><span class="dots"></span><span class="it-price">9,00 €</span></div></li><li><div class="it-top"><span class="it-name">Gambas al ajillo</span><span class="dots"></span><span class="it-price">10,50 €</span></div></li><li><div class="it-top"><span class="it-name">Queso frito con mermelada</span><span class="dots"></span><span class="it-price">8,50 €</span></div></li><li><div class="it-top"><span class="it-name">Papas arrugadas</span><span class="dots"></span><span class="it-price">8,65 €</span></div></li><li><div class="it-top"><span class="it-name">Pan con alioli</span><span class="dots"></span><span class="it-price">2,50 €</span></div></li></ul><ul class="panel" data-panel="1"><li><div class="it-top"><span class="it-name">Ropa vieja de garbanzas</span><span class="dots"></span><span class="it-price">7,50 € / 12,00 €</span></div><p class="desc">Media ración o ración.</p></li><li><div class="it-top"><span class="it-name">Carrilleras de cerdo</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Secreto ibérico</span><span class="dots"></span><span class="it-price">14,50 €</span></div></li><li><div class="it-top"><span class="it-name">Salteado de verduras</span><span class="dots"></span><span class="it-price">9,50 €</span></div></li></ul><ul class="panel" data-panel="2"><li><div class="it-top"><span class="it-name">Barraquito</span><span class="dots"></span><span class="it-price">2,20 €</span></div></li><li><div class="it-top"><span class="it-name">Tostadas</span><span class="dots"></span><span class="it-price">3,00 €</span></div></li><li><div class="it-top"><span class="it-name">Tarta de queso casera</span><span class="dots"></span><span class="it-price">4,50 €</span></div></li></ul>
+ <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span>Platos tomados de guías y opiniones; las papas, precio citado por un cliente; el resto, precios de ejemplo.</span></p>
+</div></section>
+
+<section><div class="wrap">
+ <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
+ <h2>Tapas de plaza</h2>
+ <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1672634341218-c81c18c02ca3?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1636405189493-181ecf851006?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1630175889154-13c84d513e1d?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1565252556328-92ee4a9a0983?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
+</div></section>
+
+<section id="opiniones" style="padding-top:0"><div class="wrap">
+ <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
+ <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
+ <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Comida española deliciosa y personal muy amable.”</p><cite>Ekaitz G. · Google</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“La comida espectacular el servicio excelente”</p><cite>Sonia L. · Tripadvisor</cite></blockquote></div>
+</div></section>
+
+<section class="book" id="reservar"><div class="wrap book-grid">
+ <div>
+  <p class="eyebrow"><span data-t-es="Reservar" data-t-en="Book" data-t-de="Reservieren">Reservar</span></p>
+  <h2 data-t-es="Reserva tu mesa" data-t-en="Book your table" data-t-de="Tisch reservieren">Reserva tu mesa</h2>
+  <p class="lead" data-t-es="Elige día, hora y número de personas. Te confirmamos al momento." data-t-en="Choose the day, time and party size. We confirm right away." data-t-de="Wählen Sie Tag, Uhrzeit und Personenzahl. Wir bestätigen sofort.">Elige día, hora y número de personas. Te confirmamos al momento.</p>
+ </div>
+ <form class="bk" id="bk">
+  <label class="full"><span data-t-es="Nombre" data-t-en="Name" data-t-de="Name">Nombre</span><input name="n" required autocomplete="name"></label>
+  <label><span data-t-es="Día" data-t-en="Day" data-t-de="Tag">Día</span><input type="date" name="d" required></label>
+  <label><span data-t-es="Hora" data-t-en="Time" data-t-de="Uhrzeit">Hora</span><select name="t"><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option></select></label>
+  <label class="full"><span data-t-es="Personas" data-t-en="Guests" data-t-de="Personen">Personas</span><select name="p"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label>
+  <button class="btn btn-acc" type="submit"><span data-t-es="Enviar reserva" data-t-en="Send booking" data-t-de="Reservierung senden">Enviar reserva</span></button>
+  <p class="bk-msg" id="bkmsg"></p>
+ </form>
+</div></section>
+
+<section id="info"><div class="wrap">
+ <p class="eyebrow"><span data-t-es="Horario" data-t-en="Hours" data-t-de="Öffnungszeiten">Horario</span></p>
+ <h2 data-t-es="Horario y ubicación" data-t-en="Opening hours &amp; location" data-t-de="Öffnungszeiten &amp; Lage">Horario y ubicación</h2>
+ <div class="info-grid">
+  <div>
+   <table class="hours" id="hours"><tr><td><span data-t-es="Lunes">Lunes</span></td><td>09:30–17:00</td></tr><tr><td><span data-t-es="Martes">Martes</span></td><td>09:30–17:00</td></tr><tr><td><span data-t-es="Miércoles">Miércoles</span></td><td>09:30–17:00</td></tr><tr><td><span data-t-es="Jueves">Jueves</span></td><td>09:30–17:00</td></tr><tr><td><span data-t-es="Viernes">Viernes</span></td><td>09:30–17:00</td></tr><tr><td><span data-t-es="Sábado">Sábado</span></td><td>09:30–17:00</td></tr><tr><td><span data-t-es="Domingo">Domingo</span></td><td>09:30–17:00</td></tr></table>
+   <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span>Solo de día. Las fichas públicas no coinciden en el día de cierre (martes o viernes): es un ejemplo a confirmar.</span></p>
+   <p class="addr"><b>Pl. del Rosario 17</b>Casco de Agüimes · Gran Canaria · <a href="tel:+34928784514">928 78 45 14</a></p>
+   <div class="ctas" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><a class="btn btn-acc" href="https://www.google.com/maps/dir/?api=1&destination=27.907014,-15.447017" target="_blank" rel="noopener">📍 <span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="btn" style="border:1px solid var(--line)" href="tel:+34928784514">📞 <span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a></div>
+  </div>
+  <div class="map"><iframe loading="lazy" src="https://maps.google.com/maps?q=27.907014,-15.447017&z=16&output=embed" title="Mapa"></iframe></div>
+ </div>
+</div></section>
+
+<section class="final"><div class="wrap">
+ <h2 data-t-es="¿Te esperamos?" data-t-en="See you soon?" data-t-de="Bis bald?">¿Te esperamos?</h2>
+ <p class="lead">Reserva tu mesa en la terraza de la plaza del Rosario.</p>
+ <div class="ctas"><a class="btn btn-w" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-o" href="tel:+34928784514">📞 928 78 45 14</a></div>
+</div></section>
+</main>
+
+<footer>
+ <div>© Bar El Populacho · Casco de Agüimes · Gran Canaria</div>
+ <div class="dator"><a href="../" style="text-decoration:none;display:inline-flex;align-items:center;gap:10px;color:inherit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="28" height="28" aria-hidden="true"> <defs> <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12344a"/><stop offset="1" stop-color="#0b1f2c"/></linearGradient> <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb35c"/><stop offset="1" stop-color="#ff6b4a"/></linearGradient> <clipPath id="counter"><path d="M48 38h10a22 22 0 0 1 0 44h-10z"/></clipPath> </defs> <rect width="120" height="120" rx="28" fill="url(#bg)"/> <path fill="#fff" fill-rule="evenodd" d="M34 26h24a34 34 0 0 1 0 68H34z M48 38h10a22 22 0 0 1 0 44h-10z"/> <g clip-path="url(#counter)"> <circle cx="58" cy="65" r="13.5" fill="url(#sun)"/> <rect x="40" y="65" width="40" height="20" fill="#0b1f2c"/> <path d="M44 70q3.5-2.5 7 0t7 0 7 0 7 0" fill="none" stroke="#2ec4b6" stroke-width="2.2" stroke-linecap="round"/> <path d="M44 75.5q3.5-2.5 7 0t7 0 7 0 7 0" fill="none" stroke="#2ec4b6" stroke-width="2.2" stroke-linecap="round" opacity=".55"/> </g></svg><span>Diseñada por <b>DATOR WebDesign</b></span></a><span> · <a href="tel:+34602435060">602 43 50 60</a></span></div>
+ <div class="dator-note">Propuesta de diseño: no es la web oficial del negocio.</div>
+</footer>
+
+<nav class="mbar"><a href="tel:+34928784514">📞 <span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=27.907014,-15.447017" target="_blank" rel="noopener">📍 <span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="main" href="#reservar"><span data-t-es="Reservar" data-t-en="Book" data-t-de="Reservieren">Reservar</span></a></nav>
+
+<script>
+const CFG={"wa": null, "tel": "+34928784514", "name": "Bar El Populacho", "multi": false};
+let LANG='es';
+const UIX={"es": {"f_ok_wa": "Se abrir\u00e1 WhatsApp con tu reserva lista para enviar.", "f_ok_call": "Para reservar, ll\u00e1manos:"}, "en": {"f_ok_wa": "WhatsApp will open with your booking ready to send.", "f_ok_call": "To book, call us:"}, "de": {"f_ok_wa": "WhatsApp \u00f6ffnet sich mit Ihrer Reservierung.", "f_ok_call": "Zum Reservieren rufen Sie uns an:"}};
+function setLang(l){LANG=l;document.documentElement.lang=l;
+ document.querySelectorAll('[data-t-'+l+']').forEach(e=>e.textContent=e.getAttribute('data-t-'+l));
+ document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.lang===l));
+ try{localStorage.setItem('lang',l)}catch(e){}}
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
+if(CFG.multi){let l=null;try{l=localStorage.getItem('lang')}catch(e){}
+ if(!l){const n=(navigator.language||'es').slice(0,2);l=['en','de'].includes(n)?n:'es'} if(l!=='es')setLang(l);}
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+ document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
+ document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));});
+const td=(new Date().getDay()+6)%7;const hr=document.querySelectorAll('#hours tr')[td];if(hr)hr.classList.add('today');
+const di=document.querySelector('input[type=date]');if(di){const n=new Date();di.min=n.toISOString().slice(0,10);di.value=di.min}
+document.getElementById('bk').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const m=document.getElementById('bkmsg');
+ const txt=`Hola ${CFG.name}, quiero reservar mesa: ${f.get('p')} personas, el ${f.get('d')} a las ${f.get('t')}. Nombre: ${f.get('n')}`;
+ if(CFG.wa){m.textContent=UIX[LANG].f_ok_wa;window.open('https://wa.me/'+CFG.wa+'?text='+encodeURIComponent(txt),'_blank');}
+ else{m.innerHTML=UIX[LANG].f_ok_call+' <a href="tel:'+CFG.tel+'"><b>'+CFG.tel+'</b></a>';}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
