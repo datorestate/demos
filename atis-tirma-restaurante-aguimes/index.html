@@ -129,9 +129,70 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  .mbar a.main{background:var(--acc);color:var(--on-acc)}
 }
 @media (max-width:380px){.logo-txt{font-size:19px}.mbar a{font-size:13px}}
+
+/* ---- diseños ---- */
+.hero .wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:70px;z-index:3}
+.L-playa .hero-in{padding-bottom:110px}
+.L-playa .hl{border-radius:28px;box-shadow:0 18px 40px -28px rgba(0,0,0,.35);border:0}
+.L-playa .panel{columns:auto;display:none;border:0;background:transparent;padding:0}
+.L-playa .panel.on{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.L-playa .panel li{background:var(--card);border-radius:20px;padding:18px 20px;border:1px solid var(--line)}
+.L-playa .g{border-radius:28px}
+.L-elegante .hero{align-items:center;text-align:center}
+.L-elegante .hero-in{padding:120px 20px}
+.L-elegante .hero h1{margin:0 auto;font-weight:500;letter-spacing:.02em}
+.L-elegante .hero .sub{margin-left:auto;margin-right:auto}
+.L-elegante .hero .ctas{justify-content:center}
+.L-elegante section > .wrap > .eyebrow,.L-elegante section > .wrap > h2{text-align:center}
+.L-elegante .lead{margin-left:auto;margin-right:auto;text-align:center}
+.L-elegante .tabs{justify-content:center;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tab{background:transparent;border:0;border-radius:0;padding:10px 2px;opacity:.6}
+.L-elegante .tab.on{background:transparent;color:var(--ink);opacity:1;box-shadow:inset 0 -2px 0 var(--acc)}
+.L-elegante .panel{columns:1;max-width:760px;margin:0 auto;background:transparent;border:0}
+.L-elegante .it-name{font-family:var(--fd);font-size:19px;font-weight:600}
+.L-elegante .gal{grid-template-columns:repeat(3,1fr);grid-auto-rows:280px}
+.L-elegante .g:nth-child(1){grid-column:auto;grid-row:auto}
+.L-elegante .g:nth-child(4){grid-column:span 2}
+.L-elegante .book .lead,.L-elegante .book .eyebrow,.L-elegante .book h2{text-align:left;margin-left:0}
+.L-elegante .g,.L-elegante .hl,.L-elegante .rev{border-radius:2px}
+.hero.split{color:var(--ink);background:var(--bg2);min-height:0;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:48px;padding:64px max(20px,calc((100% - 1180px)/2)) !important;overflow:visible}
+.hero.split:after{display:none}
+.hero.split .hero-in{padding:0;max-width:none;margin:0}
+.hero.split .kicker{background:var(--acc2);color:var(--ink);border:0}
+.hero.split .btn-ghost{color:var(--ink);border-color:var(--ink);background:transparent}
+.hero.split .rating{opacity:1}
+.hero-pic{position:relative}
+.hero.split img.bg{position:relative;inset:auto;height:500px;border-radius:var(--r);animation:none;transform:none;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.sticker{position:absolute;left:-18px;bottom:28px;z-index:4;background:var(--acc);color:var(--on-acc);font:800 15px/1.15 var(--fb);padding:16px 18px;border-radius:999px;transform:rotate(-8deg);max-width:170px;text-align:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.5)}
+.L-barrio h2,.L-barrio .tab,.L-barrio .hero h1{text-transform:uppercase;letter-spacing:.01em}
+.L-barrio .panel{background:#22201d;color:#f4efe6;border:0;border-radius:6px;box-shadow:inset 0 0 0 8px #4a3a2a}
+.L-barrio .panel .desc{color:#cfc6b8}.L-barrio .dots{border-color:#f4efe6}
+.L-barrio .it-price{color:var(--acc2)}
+.L-barrio .g{border-radius:4px;background:#fff;padding:8px 8px 26px;box-shadow:0 10px 22px -14px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
+.L-barrio .g:nth-child(even){transform:rotate(1.4deg)}
+.L-barrio .g img{border-radius:2px}
+.L-barrio .hl{border-width:2px;border-color:var(--ink)}
+.L-llevar .panel{columns:auto;display:none;background:transparent;border:0;padding:0}
+.L-llevar .panel.on{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.L-llevar .panel li{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:18px}
+.L-llevar .it-top{flex-direction:column;align-items:flex-start;gap:6px}
+.L-llevar .dots{display:none}
+.L-llevar .it-name{font-family:var(--fd);font-size:20px}
+.L-llevar .it-price{background:var(--acc);color:var(--on-acc);padding:4px 12px;border-radius:999px;font-size:17px}
+.L-llevar .gal{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;grid-auto-rows:auto}
+.L-llevar .g{flex:0 0 300px;height:220px;scroll-snap-align:start}
+@media (max-width:860px){
+ .hero.split{grid-template-columns:1fr;gap:26px;padding:28px 18px 40px !important}
+ .hero-pic{order:-1}
+ .hero.split img.bg{height:260px}
+ .sticker{left:auto;right:10px;bottom:-14px;font-size:13px;padding:12px 14px}
+ .L-elegante .hero-in{padding:80px 18px}
+ .L-elegante .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+ .L-playa .hero-in{padding-bottom:90px}
+}
 </style>
 </head>
-<body>
+<body class="L-barrio">
 <div class="demo-band"><b>PROPUESTA DE DISEÑO</b> · No es la web oficial de Atis Tirma Restaurante · Fotos y precios provisionales</div>
 <header class="nav"><div class="nav-in">
  <a href="#top" style="text-decoration:none"><span class="logo-txt">Atis Tirma</span></a>
@@ -141,16 +202,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 </div></header>
 
 <main id="top">
-<section class="hero" style="padding:0">
- <img class="bg" src="https://images.unsplash.com/photo-1706722533137-dd3c3f06c624?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span>
- <div class="hero-in">
-  <span class="kicker">Cocina canaria creativa · Casco de Agüimes</span>
-  <h1>Atis Tirma</h1>
-  <p class="sub">Producto de la tierra con un giro: ropa vieja de pulpo, empanadas de cochino negro y queso ahumado con mango.</p>
-  <div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div>
-  <div class="rating"><b>4,8</b> <span class="star">★</span> · 743 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div>
- </div>
-</section>
+<section class="hero split" style="padding:0"><div class="hero-in"><span class="kicker">Cocina canaria creativa · Casco de Agüimes</span><h1>Atis Tirma</h1><p class="sub">Producto de la tierra con un giro: ropa vieja de pulpo, empanadas de cochino negro y queso ahumado con mango.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,8</b> <span class="star">★</span> · 743 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div><div class="hero-pic"><img class="bg" src="https://images.unsplash.com/photo-1706722533137-dd3c3f06c624?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><span class="sticker"><span>Ropa vieja de pulpo</span></span></div></section>
 
 <section><div class="wrap">
  <p class="eyebrow">Raíces canarias</p>
@@ -167,16 +219,16 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span>Platos tomados de las opiniones de los clientes; precios de ejemplo hasta tener la carta real.</span></p>
 </div></section>
 
+<section id="opiniones"><div class="wrap">
+ <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
+ <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
+ <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Trato inigualable. Comida excelente, especialmente la carne”</p><cite>Carlos G. · Google</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“¡Una joya! Delicioso y económico”</p><cite>JoseM S. · Google</cite></blockquote></div>
+</div></section>
+
 <section><div class="wrap">
  <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
  <h2>Sabores de Agüimes</h2>
  <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1781115650881-bc5d55bd31d2?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1683315446874-e6a629087ef8?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1638975960313-3d9b37d020be?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1565599837634-134bc3aadce8?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1786918467164-ab98dce2293c?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
-</div></section>
-
-<section id="opiniones" style="padding-top:0"><div class="wrap">
- <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
- <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
- <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Trato inigualable. Comida excelente, especialmente la carne”</p><cite>Carlos G. · Google</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“¡Una joya! Delicioso y económico”</p><cite>JoseM S. · Google</cite></blockquote></div>
 </div></section>
 
 <section class="book" id="reservar"><div class="wrap book-grid">
