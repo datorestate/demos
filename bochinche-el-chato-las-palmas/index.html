@@ -277,7 +277,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 <nav class="mbar"><a href="tel:+34623022777">📞 <span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=28.137798,-15.435544" target="_blank" rel="noopener">📍 <span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="main" href="#reservar"><span data-t-es="Reservar" data-t-en="Book" data-t-de="Reservieren">Reservar</span></a></nav>
 
 <script>
-const CFG={"wa": "34623022777", "tel": "+34623022777", "name": "Bochinche El Chato", "multi": false};
+const CFG={"wa": "34623022777", "tel": "+34623022777", "name": "Bochinche El Chato", "multi": false, "msg": "quiero reservar mesa: {p} personas, el {d} a las {t}. Nombre: {n}"};
 let LANG='es';
 const UIX={"es": {"f_ok_wa": "Se abrir\u00e1 WhatsApp con tu reserva lista para enviar.", "f_ok_call": "Para reservar, ll\u00e1manos:"}, "en": {"f_ok_wa": "WhatsApp will open with your booking ready to send.", "f_ok_call": "To book, call us:"}, "de": {"f_ok_wa": "WhatsApp \u00f6ffnet sich mit Ihrer Reservierung.", "f_ok_call": "Zum Reservieren rufen Sie uns an:"}};
 function setLang(l){LANG=l;document.documentElement.lang=l;
@@ -293,7 +293,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 const td=(new Date().getDay()+6)%7;const hr=document.querySelectorAll('#hours tr')[td];if(hr)hr.classList.add('today');
 const di=document.querySelector('input[type=date]');if(di){const n=new Date();di.min=n.toISOString().slice(0,10);di.value=di.min}
 document.getElementById('bk').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const m=document.getElementById('bkmsg');
- const txt=`Hola ${CFG.name}, quiero reservar mesa: ${f.get('p')} personas, el ${f.get('d')} a las ${f.get('t')}. Nombre: ${f.get('n')}`;
+ const txt=`Hola ${CFG.name}, `+CFG.msg.replace('{p}',f.get('p')).replace('{d}',f.get('d')).replace('{t}',f.get('t')).replace('{n}',f.get('n'));
  if(CFG.wa){m.textContent=UIX[LANG].f_ok_wa;window.open('https://wa.me/'+CFG.wa+'?text='+encodeURIComponent(txt),'_blank');}
  else{m.innerHTML=UIX[LANG].f_ok_call+' <a href="tel:'+CFG.tel+'"><b>'+CFG.tel+'</b></a>';}});
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
