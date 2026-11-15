@@ -7,10 +7,10 @@
 <title>Dos Hermanos · Propuesta de diseño</title>
 <meta name="description" content="Propuesta de diseño de web para Dos Hermanos preparada por DATOR WebDesign. No es la web oficial.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f4f7fb;--bg2:#e6edf5;--ink:#0e2238;--muted:#566679;--acc:#1d4e89;--acc2:#ffd35c;--on-acc:#ffffff;--line:#d5dfea;--card:#ffffff;
---fd:'Oswald',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--fb:'Nunito Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:10px}
+:root{--bg:#fbf7ee;--bg2:#f4e6c4;--ink:#13233a;--muted:#4d5868;--acc:#a8471a;--acc2:#ffd76a;--on-acc:#ffffff;--line:#e6d9b8;--card:#fffdf7;--book-ey:#ffd76a;--chalk-price:#ffd76a;
+--fd:'Alegreya SC',Georgia,'Times New Roman',serif;--fb:'Alegreya Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:12px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
@@ -82,6 +82,7 @@ h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-
 .rev cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:13.5px}
 .rev.empty{grid-column:1/-1;text-align:center;color:var(--muted);border-style:dashed}
 .book{background:var(--ink);color:var(--bg)}
+.book .eyebrow{color:var(--book-ey)}
 .book .lead{color:color-mix(in srgb,var(--bg) 75%,transparent)}
 .book-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
 form.bk{background:var(--card);color:var(--ink);border-radius:calc(var(--r) + 6px);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
@@ -145,7 +146,8 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-elegante .hero .ctas{justify-content:center}
 .L-elegante section > .wrap > .eyebrow,.L-elegante section > .wrap > h2{text-align:center}
 .L-elegante .lead{margin-left:auto;margin-right:auto;text-align:center}
-.L-elegante .tabs{justify-content:center;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs{justify-content:flex-start;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs>:first-child{margin-left:auto}.L-elegante .tabs>:last-child{margin-right:auto}
 .L-elegante .tab{background:transparent;border:0;border-radius:0;padding:10px 2px;opacity:.6}
 .L-elegante .tab.on{background:transparent;color:var(--ink);opacity:1;box-shadow:inset 0 -2px 0 var(--acc)}
 .L-elegante .panel{columns:1;max-width:760px;margin:0 auto;background:transparent;border:0}
@@ -167,7 +169,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-barrio h2,.L-barrio .tab,.L-barrio .hero h1{text-transform:uppercase;letter-spacing:.01em}
 .L-barrio .panel{background:#22201d;color:#f4efe6;border:0;border-radius:6px;box-shadow:inset 0 0 0 8px #4a3a2a}
 .L-barrio .panel .desc{color:#cfc6b8}.L-barrio .dots{border-color:#f4efe6}
-.L-barrio .it-price{color:var(--acc2)}
+.L-barrio .it-price{color:var(--chalk-price)}
 .L-barrio .g{border-radius:4px;background:#fff;padding:8px 8px 26px;box-shadow:0 10px 22px -14px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
 .L-barrio .g:nth-child(even){transform:rotate(1.4deg)}
 .L-barrio .g img{border-radius:2px}
@@ -202,13 +204,13 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 </div></header>
 
 <main id="top">
-<section class="hero split" style="padding:0"><div class="hero-in"><span class="kicker">Ojos de Garza · junto al aeropuerto</span><h1>El bocadillo de calamares de Telde</h1><p class="sub">Calamares rebozados al momento, pan crujiente y alioli casero. Desayunos, almuerzos y raciones.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Encargar" data-t-en="Book a table" data-t-de="Tisch reservieren">Encargar</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,4</b> <span class="star">★</span> · 2.024 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div><div class="hero-pic"><img class="bg" src="https://images.unsplash.com/photo-1763467940825-d067fb3baf22?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><span class="sticker"><span>Bocadillo de calamares</span></span></div></section>
+<section class="hero split" style="padding:0"><div class="hero-in"><span class="kicker">C/ Canalejas · Ojos de Garza</span><h1>Dos Hermanos</h1><p class="sub">Calamares rebozados al momento, pan que cruje y alioli casero: el bocadillo por el que se para en Ojos de Garza camino del aeropuerto.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Encargar" data-t-en="Book a table" data-t-de="Tisch reservieren">Encargar</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,4</b> <span class="star">★</span> · 2.024 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div><div class="hero-pic"><img class="bg" src="https://images.unsplash.com/photo-1762305195844-94479ea6aca4?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><span class="sticker"><span>Calamar al momento</span></span></div></section>
 
 <section><div class="wrap">
  <p class="eyebrow">Bar Restaurante Dos Hermanos</p>
- <h2>Famosos por un bocadillo</h2>
- <p class="lead">Un bar de los de siempre en Ojos de Garza, a un paso del aeropuerto, conocido en toda la isla por su bocadillo de calamares. También hay pulpo, pescado, carnes y ensaladas, con servicio rápido y buen trato.</p>
- <div class="hls"><div class="hl reveal"><div class="hl-ico">🦑</div><h3>Bocadillo de calamares</h3><p>Solo calamares o con col, zanahoria y alioli casero.</p></div><div class="hl reveal"><div class="hl-ico">☕</div><h3>Desde las 8:00</h3><p>Desayunos con zumo de naranja natural.</p></div><div class="hl reveal"><div class="hl-ico">📞</div><h3>Para llevar</h3><p>Encarga por teléfono y recoge sin esperar.</p></div></div>
+ <h2>Un bocadillo con fama propia</h2>
+ <p class="lead">En la calle Canalejas, en Ojos de Garza, el calamar se reboza cuando lo pides y va directo al pan: solo, o con col, zanahoria y alioli de la casa. Abrimos a las 8:00 con zumo de naranja natural y café; a mediodía salen raciones de calamares, pulpo, pescado del día y ensaladas. Si vas con prisa, al avión o al trabajo, llama antes y lo tienes listo al llegar.</p>
+ <div class="hls"><div class="hl reveal"><div class="hl-ico">🦑</div><h3>Calamar al momento</h3><p>Se reboza cuando lo pides, con alioli casero.</p></div><div class="hl reveal"><div class="hl-ico">✈️</div><h3>Camino del aeropuerto</h3><p>Ojos de Garza, a pocos minutos de Gando.</p></div><div class="hl reveal"><div class="hl-ico">🍊</div><h3>Desayunos desde las 8:00</h3><p>Zumo de naranja natural y café.</p></div></div>
 </div></section>
 
 <section class="menu-sec" id="carta"><div class="wrap">
@@ -243,8 +245,8 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 
 <section><div class="wrap">
  <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
- <h2>Recién hecho</h2>
- <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1778600731531-7d836a32704c?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1749513762144-8991c898d95c?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1741414203946-9d8e45350f04?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1675377668870-baf9b35763f9?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1554433607-66b5efe9d304?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
+ <h2>Recién salido de la freidora</h2>
+ <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1734771219838-61863137b117?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1565733618599-cb82f14f34ac?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1626232441076-a2a5ada2256a?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
 </div></section>
 
 <section id="info"><div class="wrap">
@@ -263,7 +265,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 
 <section class="final"><div class="wrap">
  <h2 data-t-es="¿Te esperamos?" data-t-en="See you soon?" data-t-de="Bis bald?">¿Te esperamos?</h2>
- <p class="lead">Llama, encarga tu bocadillo de calamares y recógelo recién hecho.</p>
+ <p class="lead">Llama, encarga tu bocadillo de calamares y recógelo calentito al pasar.</p>
  <div class="ctas"><a class="btn btn-w" href="#reservar"><span data-t-es="Encargar" data-t-en="Book a table" data-t-de="Tisch reservieren">Encargar</span></a><a class="btn btn-o" href="tel:+34928574968">📞 928 57 49 68</a></div>
 </div></section>
 </main>

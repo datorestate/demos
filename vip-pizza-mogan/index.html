@@ -7,10 +7,10 @@
 <title>ViP Pizza · Propuesta de diseño</title>
 <meta name="description" content="Propuesta de diseño de web para ViP Pizza preparada por DATOR WebDesign. No es la web oficial.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Barlow+Semi+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff8ef;--bg2:#f7ebd9;--ink:#16302b;--muted:#5a6b66;--acc:#c8352a;--acc2:#ffd27a;--on-acc:#ffffff;--line:#ecdcc4;--card:#fffdf8;
---fd:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--fb:'Rubik',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:18px}
+:root{--bg:#fff8ef;--bg2:#fde9cf;--ink:#14213d;--muted:#4a5468;--acc:#c8241f;--acc2:#b5dd97;--on-acc:#ffffff;--line:#efd9bb;--card:#ffffff;--book-ey:#b5dd97;--chalk-price:#b5dd97;
+--fd:'Lilita One',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--fb:'Barlow Semi Condensed',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:16px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
@@ -82,6 +82,7 @@ h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-
 .rev cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:13.5px}
 .rev.empty{grid-column:1/-1;text-align:center;color:var(--muted);border-style:dashed}
 .book{background:var(--ink);color:var(--bg)}
+.book .eyebrow{color:var(--book-ey)}
 .book .lead{color:color-mix(in srgb,var(--bg) 75%,transparent)}
 .book-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
 form.bk{background:var(--card);color:var(--ink);border-radius:calc(var(--r) + 6px);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
@@ -145,7 +146,8 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-elegante .hero .ctas{justify-content:center}
 .L-elegante section > .wrap > .eyebrow,.L-elegante section > .wrap > h2{text-align:center}
 .L-elegante .lead{margin-left:auto;margin-right:auto;text-align:center}
-.L-elegante .tabs{justify-content:center;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs{justify-content:flex-start;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs>:first-child{margin-left:auto}.L-elegante .tabs>:last-child{margin-right:auto}
 .L-elegante .tab{background:transparent;border:0;border-radius:0;padding:10px 2px;opacity:.6}
 .L-elegante .tab.on{background:transparent;color:var(--ink);opacity:1;box-shadow:inset 0 -2px 0 var(--acc)}
 .L-elegante .panel{columns:1;max-width:760px;margin:0 auto;background:transparent;border:0}
@@ -167,7 +169,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-barrio h2,.L-barrio .tab,.L-barrio .hero h1{text-transform:uppercase;letter-spacing:.01em}
 .L-barrio .panel{background:#22201d;color:#f4efe6;border:0;border-radius:6px;box-shadow:inset 0 0 0 8px #4a3a2a}
 .L-barrio .panel .desc{color:#cfc6b8}.L-barrio .dots{border-color:#f4efe6}
-.L-barrio .it-price{color:var(--acc2)}
+.L-barrio .it-price{color:var(--chalk-price)}
 .L-barrio .g{border-radius:4px;background:#fff;padding:8px 8px 26px;box-shadow:0 10px 22px -14px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
 .L-barrio .g:nth-child(even){transform:rotate(1.4deg)}
 .L-barrio .g img{border-radius:2px}
@@ -192,7 +194,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 }
 </style>
 </head>
-<body class="L-playa">
+<body class="L-llevar">
 <div class="demo-band"><b>PROPUESTA DE DISEÑO</b> · No es la web oficial de ViP Pizza · Fotos y precios provisionales</div>
 <header class="nav"><div class="nav-in">
  <a href="#top" style="text-decoration:none"><span class="logo-txt">ViP Pizza</span></a>
@@ -202,19 +204,13 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 </div></header>
 
 <main id="top">
-<section class="hero" style="padding:0"><img class="bg" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><div class="hero-in"><span class="kicker" data-t-es="Puerto Rico · Gran Canaria" data-t-en="Puerto Rico · Gran Canaria" data-t-de="Puerto Rico · Gran Canaria">Puerto Rico · Gran Canaria</span><h1>ViP Pizza</h1><p class="sub" data-t-es="Pizza y pasta caseras, hechas al momento en cocina abierta, en el corazón de Puerto Rico." data-t-en="Homemade pizza and pasta, cooked to order in an open kitchen, in the heart of Puerto Rico." data-t-de="Hausgemachte Pizza und Pasta, frisch in der offenen Küche zubereitet, im Herzen von Puerto Rico.">Pizza y pasta caseras, hechas al momento en cocina abierta, en el corazón de Puerto Rico.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,7</b> <span class="star">★</span> · 1.476 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Tripadvisor</span></div></div><svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 240 10 480 90 720 50 S 1200 10 1440 50 V90 H0Z" fill="var(--bg)"/></svg></section>
+<section class="hero split" style="padding:0"><div class="hero-in"><span class="kicker" data-t-es="C/ Puerto Rico 3 · Mogán" data-t-en="C/ Puerto Rico 3 · Mogán" data-t-de="C/ Puerto Rico 3 · Mogán">C/ Puerto Rico 3 · Mogán</span><h1>ViP Pizza</h1><p class="sub" data-t-es="Pizzas enormes de masa casera que ves estirar en la cocina abierta, en pleno Puerto Rico y por menos de 20 € por cabeza." data-t-en="Huge pizzas on homemade dough, stretched in front of you in the open kitchen, right in Puerto Rico and under €20 a head." data-t-de="Riesige Pizzen aus hausgemachtem Teig, vor Ihren Augen in der offenen Küche gezogen – mitten in Puerto Rico, für unter 20 € pro Person.">Pizzas enormes de masa casera que ves estirar en la cocina abierta, en pleno Puerto Rico y por menos de 20 € por cabeza.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,7</b> <span class="star">★</span> · 1.476 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Tripadvisor</span></div></div><div class="hero-pic"><img class="bg" src="https://images.unsplash.com/photo-1788090486394-e6a08a9ee1d1?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><span class="sticker"><span data-t-es="Pizzas enormes" data-t-en="Huge pizzas" data-t-de="Riesige Pizzen">Pizzas enormes</span></span></div></section>
 
 <section><div class="wrap">
- <p class="eyebrow" data-t-es="Pizzería italiana" data-t-en="Italian pizzeria" data-t-de="Italienische Pizzeria">Pizzería italiana</p>
- <h2 data-t-es="Sabor a Italia, precio de barrio" data-t-en="A taste of Italy at fair prices" data-t-de="Italienischer Geschmack zu fairen Preisen">Sabor a Italia, precio de barrio</h2>
- <p class="lead" data-t-es="Masa casera, ingredientes frescos y una cocina abierta donde ves cómo se prepara tu pizza. Pizzas, calzone, carbonara y lasaña por menos de 20 € por persona. En temporada alta y fines de semana, mejor reservar." data-t-en="Homemade dough, fresh ingredients and an open kitchen where you watch your pizza being made. Pizza, calzone, carbonara and lasagne for under €20 per person. Book ahead at weekends and in high season." data-t-de="Hausgemachter Teig, frische Zutaten und eine offene Küche, in der Sie Ihrer Pizza zusehen. Pizza, Calzone, Carbonara und Lasagne für unter 20 € pro Person. Am Wochenende und in der Hochsaison besser reservieren.">Masa casera, ingredientes frescos y una cocina abierta donde ves cómo se prepara tu pizza. Pizzas, calzone, carbonara y lasaña por menos de 20 € por persona. En temporada alta y fines de semana, mejor reservar.</p>
- <div class="hls"><div class="hl reveal"><div class="hl-ico">🍕</div><h3 data-t-es="Nº 1 en pizza de Mogán" data-t-en="No. 1 pizzeria in Mogán" data-t-de="Nr. 1 Pizzeria in Mogán">Nº 1 en pizza de Mogán</h3><p data-t-es="Según el ranking de Gastroranking." data-t-en="According to Gastroranking." data-t-de="Laut Gastroranking.">Según el ranking de Gastroranking.</p></div><div class="hl reveal"><div class="hl-ico">👨‍🍳</div><h3 data-t-es="Cocina abierta" data-t-en="Open kitchen" data-t-de="Offene Küche">Cocina abierta</h3><p data-t-es="Mira cómo se hace tu pizza." data-t-en="Watch your pizza being made." data-t-de="Sehen Sie zu, wie Ihre Pizza entsteht.">Mira cómo se hace tu pizza.</p></div><div class="hl reveal"><div class="hl-ico">💶</div><h3 data-t-es="Menos de 20 € p.p." data-t-en="Under €20 per person" data-t-de="Unter 20 € p. P.">Menos de 20 € p.p.</h3><p data-t-es="Comida casera a buen precio." data-t-en="Homemade food at a good price." data-t-de="Hausmannskost zum guten Preis.">Comida casera a buen precio.</p></div></div>
-</div></section>
-
-<section><div class="wrap">
- <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
- <h2 data-t-es="Hecho en casa" data-t-en="Homemade" data-t-de="Hausgemacht">Hecho en casa</h2>
- <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1786175525568-913cedb21fff?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1777586026479-4d46489a8f11?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1574969903809-3f7a1668ceb0?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
+ <p class="eyebrow" data-t-es="Pizzería de cocina abierta" data-t-en="Open-kitchen pizzeria" data-t-de="Pizzeria mit offener Küche">Pizzería de cocina abierta</p>
+ <h2 data-t-es="Pequeña, siempre llena y nº 1 en pizza de Mogán" data-t-en="Small, always busy, Mogán&#x27;s No. 1 pizzeria" data-t-de="Klein, immer voll, Nr. 1 Pizzeria in Mogán">Pequeña, siempre llena y nº 1 en pizza de Mogán</h2>
+ <p class="lead" data-t-es="En la calle Puerto Rico la masa se hace en casa y la pizza se monta delante de ti: margherita, pepperoni, jamón y piña, calzone o quattro formaggi, y carbonara o lasaña para quien prefiere pasta. Más de 1.400 opiniones en Tripadvisor hablan de pizzas enormes y de un trato de diez. El local es pequeño y se llena: en temporada alta y fines de semana, mejor reservar." data-t-en="On Calle Puerto Rico the dough is made in-house and your pizza is built right in front of you: margherita, pepperoni, ham and pineapple, calzone or quattro formaggi, plus carbonara or lasagne if you prefer pasta. Over 1,400 Tripadvisor reviews mention huge pizzas and top-notch service. It&#x27;s a small place and fills up, so book ahead at weekends and in high season." data-t-de="In der Calle Puerto Rico wird der Teig selbst gemacht und Ihre Pizza direkt vor Ihnen belegt: Margherita, Pepperoni, Schinken-Ananas, Calzone oder Quattro Formaggi, dazu Carbonara oder Lasagne für Pasta-Fans. Über 1.400 Tripadvisor-Bewertungen loben riesige Pizzen und herzlichen Service. Das Lokal ist klein und schnell voll – am Wochenende und in der Hochsaison besser reservieren.">En la calle Puerto Rico la masa se hace en casa y la pizza se monta delante de ti: margherita, pepperoni, jamón y piña, calzone o quattro formaggi, y carbonara o lasaña para quien prefiere pasta. Más de 1.400 opiniones en Tripadvisor hablan de pizzas enormes y de un trato de diez. El local es pequeño y se llena: en temporada alta y fines de semana, mejor reservar.</p>
+ <div class="hls"><div class="hl reveal"><div class="hl-ico">🍕</div><h3 data-t-es="Pizzas enormes" data-t-en="Huge pizzas" data-t-de="Riesige Pizzen">Pizzas enormes</h3><p data-t-es="Masa casera, estirada al momento." data-t-en="Homemade dough, stretched to order." data-t-de="Hausgemachter Teig, frisch gezogen.">Masa casera, estirada al momento.</p></div><div class="hl reveal"><div class="hl-ico">👀</div><h3 data-t-es="Cocina abierta" data-t-en="Open kitchen" data-t-de="Offene Küche">Cocina abierta</h3><p data-t-es="Ves cómo se hace la tuya." data-t-en="Watch yours being made." data-t-de="Sehen Sie zu, wie Ihre entsteht.">Ves cómo se hace la tuya.</p></div><div class="hl reveal"><div class="hl-ico">💶</div><h3 data-t-es="Menos de 20 € p.p." data-t-en="Under €20 a head" data-t-de="Unter 20 € p. P.">Menos de 20 € p.p.</h3><p data-t-es="Pizza, pasta y postre sin sustos." data-t-en="Pizza, pasta and dessert, no surprises." data-t-de="Pizza, Pasta und Dessert ohne Überraschungen.">Pizza, pasta y postre sin sustos.</p></div></div>
 </div></section>
 
 <section class="menu-sec" id="carta"><div class="wrap">
@@ -223,12 +219,6 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  <div class="tabs" role="tablist"><button class="tab on" data-tab="0"><span data-t-es="Entrantes" data-t-en="Starters" data-t-de="Vorspeisen">Entrantes</span></button><button class="tab" data-tab="1"><span data-t-es="Pizzas" data-t-en="Pizza" data-t-de="Pizza">Pizzas</span></button><button class="tab" data-tab="2"><span data-t-es="Pasta" data-t-en="Pasta" data-t-de="Pasta">Pasta</span></button><button class="tab" data-tab="3"><span data-t-es="Postres" data-t-en="Desserts" data-t-de="Desserts">Postres</span></button></div>
  <ul class="panel on" data-panel="0"><li><div class="it-top"><span class="it-name">Pane all&#x27;aglio ViP</span><span class="dots"></span><span class="it-price">5,50 €</span></div><p class="desc">Pan de ajo de la casa.</p></li><li><div class="it-top"><span class="it-name">Bruschetta</span><span class="dots"></span><span class="it-price">6,00 €</span></div></li><li><div class="it-top"><span class="it-name">Ensalada caprese</span><span class="dots"></span><span class="it-price">8,50 €</span></div></li></ul><ul class="panel" data-panel="1"><li><div class="it-top"><span class="it-name">Margherita</span><span class="dots"></span><span class="it-price">9,00 €</span></div></li><li><div class="it-top"><span class="it-name">Pepperoni</span><span class="dots"></span><span class="it-price">11,00 €</span></div></li><li><div class="it-top"><span class="it-name">Prosciutto e funghi</span><span class="dots"></span><span class="it-price">11,50 €</span></div></li><li><div class="it-top"><span class="it-name">Quattro formaggi</span><span class="dots"></span><span class="it-price">12,00 €</span></div></li><li><div class="it-top"><span class="it-name">Calzone</span><span class="dots"></span><span class="it-price">12,00 €</span></div></li></ul><ul class="panel" data-panel="2"><li><div class="it-top"><span class="it-name">Spaghetti carbonara</span><span class="dots"></span><span class="it-price">11,00 €</span></div></li><li><div class="it-top"><span class="it-name">Lasagna</span><span class="dots"></span><span class="it-price">12,00 €</span></div></li><li><div class="it-top"><span class="it-name">Penne all&#x27;arrabbiata</span><span class="dots"></span><span class="it-price">10,00 €</span></div></li></ul><ul class="panel" data-panel="3"><li><div class="it-top"><span class="it-name">Tiramisù</span><span class="dots"></span><span class="it-price">5,50 €</span></div></li><li><div class="it-top"><span class="it-name">Panna cotta</span><span class="dots"></span><span class="it-price">5,00 €</span></div></li></ul>
  <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span data-t-es="Platos tomados de las opiniones de los clientes; precios de ejemplo (menos de 20 € por persona)." data-t-en="Dishes from guest reviews; sample prices (under €20 per person)." data-t-de="Gerichte aus Gästebewertungen; Beispielpreise (unter 20 € p. P.).">Platos tomados de las opiniones de los clientes; precios de ejemplo (menos de 20 € por persona).</span></p>
-</div></section>
-
-<section id="opiniones"><div class="wrap">
- <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
- <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
- <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Unas pizzas inmejorables y una atención de 10.”</p><cite>Hannah · Gastroranking</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“¡Sin duda la mejor pizza de Gran Canaria! ¡Tienes que ir!”</p><cite>E. J. · Gastroranking</cite></blockquote></div>
 </div></section>
 
 <section class="book" id="reservar"><div class="wrap book-grid">
@@ -247,6 +237,18 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  </form>
 </div></section>
 
+<section id="opiniones"><div class="wrap">
+ <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
+ <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
+ <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Unas pizzas inmejorables y una atención de 10.”</p><cite>Hannah · Gastroranking</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“¡Sin duda la mejor pizza de Gran Canaria! ¡Tienes que ir!”</p><cite>E. J. · Gastroranking</cite></blockquote></div>
+</div></section>
+
+<section><div class="wrap">
+ <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
+ <h2 data-t-es="De la mesa de amasar al horno" data-t-en="From the dough bench to the oven" data-t-de="Vom Teigbrett in den Ofen">De la mesa de amasar al horno</h2>
+ <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1788999422554-50cb361cad69?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1666356011519-6f2028091f23?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1709429790175-b02bb1b19207?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1744870416684-68bb2ab3ed97?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1724116379273-ba32b70d112c?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
+</div></section>
+
 <section id="info"><div class="wrap">
  <p class="eyebrow"><span data-t-es="Horario" data-t-en="Hours" data-t-de="Öffnungszeiten">Horario</span></p>
  <h2 data-t-es="Horario y ubicación" data-t-en="Opening hours &amp; location" data-t-de="Öffnungszeiten &amp; Lage">Horario y ubicación</h2>
@@ -263,7 +265,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 
 <section class="final"><div class="wrap">
  <h2 data-t-es="¿Te esperamos?" data-t-en="See you soon?" data-t-de="Bis bald?">¿Te esperamos?</h2>
- <p class="lead" data-t-es="Reserva tu mesa: en temporada alta se llena." data-t-en="Book your table: it fills up in high season." data-t-de="Reservieren Sie: In der Hochsaison ist es schnell voll.">Reserva tu mesa: en temporada alta se llena.</p>
+ <p class="lead" data-t-es="Llámanos y te guardamos mesa: el local es pequeño y se llena." data-t-en="Call us and we&#x27;ll save you a table – it&#x27;s a small place and fills up." data-t-de="Rufen Sie an, wir halten Ihnen einen Tisch frei – das Lokal ist klein und schnell voll.">Llámanos y te guardamos mesa: el local es pequeño y se llena.</p>
  <div class="ctas"><a class="btn btn-w" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-o" href="tel:+34928941792">📞 928 94 17 92</a></div>
 </div></section>
 </main>

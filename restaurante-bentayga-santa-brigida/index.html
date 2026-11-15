@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f4f0;--bg2:#e7e2d9;--ink:#1e1a17;--muted:#625a52;--acc:#7a2e2e;--acc2:#c8a04a;--on-acc:#ffffff;--line:#dcd5ca;--card:#ffffff;
+:root{--bg:#f6f4f0;--bg2:#e7e2d9;--ink:#1e1a17;--muted:#625a52;--acc:#7a2e2e;--acc2:#c8a04a;--on-acc:#ffffff;--line:#dcd5ca;--card:#ffffff;--book-ey:#c8a04a;--chalk-price:#c8a04a;
 --fd:'Libre Baskerville',Georgia,'Times New Roman',serif;--fb:'Rubik',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:10px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -82,6 +82,7 @@ h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-
 .rev cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:13.5px}
 .rev.empty{grid-column:1/-1;text-align:center;color:var(--muted);border-style:dashed}
 .book{background:var(--ink);color:var(--bg)}
+.book .eyebrow{color:var(--book-ey)}
 .book .lead{color:color-mix(in srgb,var(--bg) 75%,transparent)}
 .book-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
 form.bk{background:var(--card);color:var(--ink);border-radius:calc(var(--r) + 6px);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
@@ -145,7 +146,8 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-elegante .hero .ctas{justify-content:center}
 .L-elegante section > .wrap > .eyebrow,.L-elegante section > .wrap > h2{text-align:center}
 .L-elegante .lead{margin-left:auto;margin-right:auto;text-align:center}
-.L-elegante .tabs{justify-content:center;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs{justify-content:flex-start;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs>:first-child{margin-left:auto}.L-elegante .tabs>:last-child{margin-right:auto}
 .L-elegante .tab{background:transparent;border:0;border-radius:0;padding:10px 2px;opacity:.6}
 .L-elegante .tab.on{background:transparent;color:var(--ink);opacity:1;box-shadow:inset 0 -2px 0 var(--acc)}
 .L-elegante .panel{columns:1;max-width:760px;margin:0 auto;background:transparent;border:0}
@@ -167,7 +169,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-barrio h2,.L-barrio .tab,.L-barrio .hero h1{text-transform:uppercase;letter-spacing:.01em}
 .L-barrio .panel{background:#22201d;color:#f4efe6;border:0;border-radius:6px;box-shadow:inset 0 0 0 8px #4a3a2a}
 .L-barrio .panel .desc{color:#cfc6b8}.L-barrio .dots{border-color:#f4efe6}
-.L-barrio .it-price{color:var(--acc2)}
+.L-barrio .it-price{color:var(--chalk-price)}
 .L-barrio .g{border-radius:4px;background:#fff;padding:8px 8px 26px;box-shadow:0 10px 22px -14px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
 .L-barrio .g:nth-child(even){transform:rotate(1.4deg)}
 .L-barrio .g img{border-radius:2px}

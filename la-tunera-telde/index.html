@@ -7,10 +7,10 @@
 <title>La Tunera · Propuesta de diseño</title>
 <meta name="description" content="Propuesta de diseño de web para La Tunera preparada por DATOR WebDesign. No es la web oficial.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700;800&family=Overpass:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf6f5;--bg2:#f3e8ea;--ink:#2a1622;--muted:#6e5864;--acc:#a3245e;--acc2:#c9e2b5;--on-acc:#ffffff;--line:#e9d9dd;--card:#ffffff;
---fd:'Spectral',Georgia,'Times New Roman',serif;--fb:'Outfit',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:16px}
+:root{--bg:#f6f3ee;--bg2:#e9e6dc;--ink:#1c2a22;--muted:#53605a;--acc:#9d1b55;--acc2:#c8d9a8;--on-acc:#ffffff;--line:#dcd8cc;--card:#fffdf9;--book-ey:#c8d9a8;--chalk-price:#c8d9a8;
+--fd:'Sansita',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--fb:'Overpass',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:4px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
@@ -82,6 +82,7 @@ h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-
 .rev cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:13.5px}
 .rev.empty{grid-column:1/-1;text-align:center;color:var(--muted);border-style:dashed}
 .book{background:var(--ink);color:var(--bg)}
+.book .eyebrow{color:var(--book-ey)}
 .book .lead{color:color-mix(in srgb,var(--bg) 75%,transparent)}
 .book-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
 form.bk{background:var(--card);color:var(--ink);border-radius:calc(var(--r) + 6px);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
@@ -145,7 +146,8 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-elegante .hero .ctas{justify-content:center}
 .L-elegante section > .wrap > .eyebrow,.L-elegante section > .wrap > h2{text-align:center}
 .L-elegante .lead{margin-left:auto;margin-right:auto;text-align:center}
-.L-elegante .tabs{justify-content:center;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs{justify-content:flex-start;border-bottom:1px solid var(--line);gap:26px}
+.L-elegante .tabs>:first-child{margin-left:auto}.L-elegante .tabs>:last-child{margin-right:auto}
 .L-elegante .tab{background:transparent;border:0;border-radius:0;padding:10px 2px;opacity:.6}
 .L-elegante .tab.on{background:transparent;color:var(--ink);opacity:1;box-shadow:inset 0 -2px 0 var(--acc)}
 .L-elegante .panel{columns:1;max-width:760px;margin:0 auto;background:transparent;border:0}
@@ -167,7 +169,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .L-barrio h2,.L-barrio .tab,.L-barrio .hero h1{text-transform:uppercase;letter-spacing:.01em}
 .L-barrio .panel{background:#22201d;color:#f4efe6;border:0;border-radius:6px;box-shadow:inset 0 0 0 8px #4a3a2a}
 .L-barrio .panel .desc{color:#cfc6b8}.L-barrio .dots{border-color:#f4efe6}
-.L-barrio .it-price{color:var(--acc2)}
+.L-barrio .it-price{color:var(--chalk-price)}
 .L-barrio .g{border-radius:4px;background:#fff;padding:8px 8px 26px;box-shadow:0 10px 22px -14px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
 .L-barrio .g:nth-child(even){transform:rotate(1.4deg)}
 .L-barrio .g img{border-radius:2px}
@@ -192,7 +194,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 }
 </style>
 </head>
-<body class="L-barrio">
+<body class="L-elegante">
 <div class="demo-band"><b>PROPUESTA DE DISEÑO</b> · No es la web oficial de La Tunera · Fotos y precios provisionales</div>
 <header class="nav"><div class="nav-in">
  <a href="#top" style="text-decoration:none"><span class="logo-txt">La Tunera</span></a>
@@ -202,33 +204,33 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 </div></header>
 
 <main id="top">
-<section class="hero split" style="padding:0"><div class="hero-in"><span class="kicker">Barrio de San Juan · Telde</span><h1>La Tunera</h1><p class="sub">Cocina canaria creativa: almogrote de tunera, papas con mojo de chocolate y postres de gofio.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,6</b> <span class="star">★</span> · 736 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div><div class="hero-pic"><img class="bg" src="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><span class="sticker"><span>Almogrote de tunera</span></span></div></section>
+<section class="hero" style="padding:0"><img class="bg" src="https://images.unsplash.com/photo-1731941465921-eb4285693713?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><div class="hero-in"><span class="kicker">Betancor Fabelo 17 · San Juan, Telde</span><h1>La Tunera</h1><p class="sub">Cocina canaria con otra mirada: almogrote de tunera, tacos de bacalao y papas con mojo de chocolate en una casa pequeña del barrio de San Juan.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,6</b> <span class="star">★</span> · 736 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div></section>
 
 <section><div class="wrap">
  <p class="eyebrow">Cocina canaria de autor</p>
- <h2>Lo de aquí, con otra mirada</h2>
- <p class="lead">Un restaurante pequeño y acogedor en San Juan donde el producto canario se reinventa: mermelada de papa, croquetas, carpaccio, solomillo y postres de gofio. Ideal para una cena en pareja o una comida en familia.</p>
- <div class="hls"><div class="hl reveal"><div class="hl-ico">🌵</div><h3>Almogrote de tunera</h3><p>Nuestro guiño a la fruta que nos da nombre.</p></div><div class="hl reveal"><div class="hl-ico">🍫</div><h3>Papas con mojo de chocolate</h3><p>El plato del que todos hablan.</p></div><div class="hl reveal"><div class="hl-ico">🕯️</div><h3>Ambiente íntimo</h3><p>Para cenas en pareja o en familia.</p></div></div>
+ <h2>Lo de aquí, contado de otra manera</h2>
+ <p class="lead">La Tunera es una casa pequeña en la calle Betancor Fabelo, en el barrio de San Juan. Partimos del producto canario y le damos una vuelta: almogrote de tunera, queso con mermelada de papa, tacos de bacalao, pastela de pollo, láminas de barriga de cochino negro o garbanzos con falsos callos. De postre, gofio, chocolate o tortitas de calabaza con su helado. Unos 25–30 € por persona con bebida y postre; hay pocas mesas, así que conviene reservar.</p>
+ <div class="hls"><div class="hl reveal"><div class="hl-ico">🌵</div><h3>Almogrote de tunera</h3><p>El guiño a la fruta que nos da nombre.</p></div><div class="hl reveal"><div class="hl-ico">🐟</div><h3>Tacos de bacalao</h3><p>Y barriga de cochino negro en láminas.</p></div><div class="hl reveal"><div class="hl-ico">🍫</div><h3>Papas con mojo de chocolate</h3><p>El plato del que todos hablan.</p></div></div>
 </div></section>
 
 <section class="menu-sec" id="carta"><div class="wrap">
  <p class="eyebrow"><span data-t-es="Carta" data-t-en="Menu" data-t-de="Speisekarte">Carta</span></p>
  <h2 data-t-es="Nuestra carta" data-t-en="Our menu" data-t-de="Unsere Speisekarte">Nuestra carta</h2>
  <div class="tabs" role="tablist"><button class="tab on" data-tab="0"><span>Para empezar</span></button><button class="tab" data-tab="1"><span>Principales</span></button><button class="tab" data-tab="2"><span>Postres</span></button></div>
- <ul class="panel on" data-panel="0"><li><div class="it-top"><span class="it-name">Almogrote de tunera</span><span class="dots"></span><span class="it-price">8,50 €</span></div></li><li><div class="it-top"><span class="it-name">Papas con mojo de chocolate</span><span class="dots"></span><span class="it-price">7,50 €</span></div></li><li><div class="it-top"><span class="it-name">Queso con mermelada de papa</span><span class="dots"></span><span class="it-price">9,50 €</span></div></li><li><div class="it-top"><span class="it-name">Croquetas caseras</span><span class="dots"></span><span class="it-price">8,50 €</span></div></li><li><div class="it-top"><span class="it-name">Carpaccio</span><span class="dots"></span><span class="it-price">12,50 €</span></div></li></ul><ul class="panel" data-panel="1"><li><div class="it-top"><span class="it-name">Solomillo</span><span class="dots"></span><span class="it-price">21,00 €</span></div><p class="desc">Con guarnición de la casa.</p></li><li><div class="it-top"><span class="it-name">Pollo de corral</span><span class="dots"></span><span class="it-price">15,50 €</span></div></li><li><div class="it-top"><span class="it-name">Pescado del día</span><span class="dots"></span><span class="it-price">s/m</span></div></li></ul><ul class="panel" data-panel="2"><li><div class="it-top"><span class="it-name">Postre de gofio</span><span class="dots"></span><span class="it-price">6,00 €</span></div></li><li><div class="it-top"><span class="it-name">Gofre con chocolate</span><span class="dots"></span><span class="it-price">6,00 €</span></div></li><li><div class="it-top"><span class="it-name">Postre de chocolate</span><span class="dots"></span><span class="it-price">6,50 €</span></div></li></ul>
- <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span>Platos tomados de las opiniones de los clientes; precios de ejemplo (ticket medio 20–30 €).</span></p>
+ <ul class="panel on" data-panel="0"><li><div class="it-top"><span class="it-name">Almogrote de tunera</span><span class="dots"></span><span class="it-price">8,50 €</span></div></li><li><div class="it-top"><span class="it-name">Papas con mojo de chocolate</span><span class="dots"></span><span class="it-price">7,50 €</span></div></li><li><div class="it-top"><span class="it-name">Queso con mermelada de papa</span><span class="dots"></span><span class="it-price">9,50 €</span></div></li><li><div class="it-top"><span class="it-name">Croquetas caseras</span><span class="dots"></span><span class="it-price">8,50 €</span></div></li><li><div class="it-top"><span class="it-name">Tacos de bacalao</span><span class="dots"></span><span class="it-price">10,50 €</span></div></li></ul><ul class="panel" data-panel="1"><li><div class="it-top"><span class="it-name">Pastela de pollo</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Láminas de barriga de cochino negro</span><span class="dots"></span><span class="it-price">15,50 €</span></div></li><li><div class="it-top"><span class="it-name">Garbanzos con falsos callos</span><span class="dots"></span><span class="it-price">12,00 €</span></div></li><li><div class="it-top"><span class="it-name">Solomillo</span><span class="dots"></span><span class="it-price">21,00 €</span></div><p class="desc">Con guarnición de la casa.</p></li></ul><ul class="panel" data-panel="2"><li><div class="it-top"><span class="it-name">Postre de gofio</span><span class="dots"></span><span class="it-price">6,00 €</span></div></li><li><div class="it-top"><span class="it-name">Tortitas de calabaza con helado de calabaza</span><span class="dots"></span><span class="it-price">6,50 €</span></div></li><li><div class="it-top"><span class="it-name">Postre de chocolate</span><span class="dots"></span><span class="it-price">6,50 €</span></div></li></ul>
+ <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span>Platos tomados de las opiniones de los clientes; precios de ejemplo (ticket medio 25–30 €).</span></p>
+</div></section>
+
+<section><div class="wrap">
+ <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
+ <h2>Canarias, plato a plato</h2>
+ <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1717016296561-37af0c705281?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1660652377925-d615178531db?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1692197275441-40c874f40385?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1633959639810-16c90bee95f9?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1565004602745-718e1b0d44f8?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
 </div></section>
 
 <section id="opiniones"><div class="wrap">
  <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
  <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
  <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Sin duda el mejor restaurante de Telde, la comida es deliciosa, el trato inmejorable”</p><cite>Rubén E. · Gastroranking</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“no es el típico lugar turístico con olor a fritura”</p><cite>Morgane D. · Gastroranking</cite></blockquote></div>
-</div></section>
-
-<section><div class="wrap">
- <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
- <h2>Canarias en el plato</h2>
- <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1676471926534-d5c9771909fa?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1689672235501-6dc1e56d454c?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1703849133132-98c23595b981?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1750943036999-81e666b2296c?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
 </div></section>
 
 <section class="book" id="reservar"><div class="wrap book-grid">
@@ -263,7 +265,7 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 
 <section class="final"><div class="wrap">
  <h2 data-t-es="¿Te esperamos?" data-t-en="See you soon?" data-t-de="Bis bald?">¿Te esperamos?</h2>
- <p class="lead">Reserva tu mesa y descubre la cocina canaria de La Tunera.</p>
+ <p class="lead">Llámanos y reserva: en La Tunera hay pocas mesas y se llenan pronto.</p>
  <div class="ctas"><a class="btn btn-w" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-o" href="tel:+34928691363">📞 928 69 13 63</a></div>
 </div></section>
 </main>
