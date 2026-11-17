@@ -6,11 +6,20 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Palace of India · Propuesta de diseño</title>
 <meta name="description" content="Propuesta de diseño de web para Palace of India preparada por DATOR WebDesign. No es la web oficial.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f6f8f7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Palace of India · propuesta de web">
+<meta property="og:description" content="Pollo tandoori, rogan josh de cordero y naan recién salido del horno, con el puerto de Puerto del Carmen al otro lado de la ventana.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1200&q=70">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2716%27%20fill%3D%27%237d2650%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20text-anchor%3D%27middle%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2738%27%20font-weight%3D%27700%27%20fill%3D%27%23ffffff%27%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1800&q=70" imagesrcset="https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1800&q=70 1800w, https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=2400&q=70 2400w" imagesizes="100vw">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Palace of India", "telephone": "+34602334423", "address": {"@type": "PostalAddress", "streetAddress": "C/ Roque Nublo 11", "addressLocality": "Puerto del Carmen, Tías", "addressRegion": "Canarias", "addressCountry": "ES"}, "description": "Pollo tandoori, rogan josh de cordero y naan recién salido del horno, con el puerto de Puerto del Carmen al otro lado de la ventana.", "geo": {"@type": "GeoCoordinates", "latitude": 28.920805, "longitude": -13.671209}, "image": "https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1200&q=70"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@600;700&family=Catamaran:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff9f0;--bg2:#fbedd8;--ink:#3a1029;--muted:#755a6a;--acc:#c2410c;--acc2:#0f766e;--on-acc:#ffffff;--line:#f0dcc2;--card:#fffdf9;--book-ey:#fff9f0;--chalk-price:#f4efe6;
---fd:'Yeseva One',Georgia,'Times New Roman',serif;--fb:'Hind',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:16px}
+:root{--bg:#f6f8f7;--bg2:#e6eeec;--ink:#1a1f3a;--muted:#4f5670;--acc:#7d2650;--acc2:#f3b33d;--on-acc:#ffffff;--line:#d5dfdc;--card:#ffffff;--book-ey:#f3b33d;--chalk-price:#f3b33d;
+--fd:'Arima',Georgia,'Times New Roman',serif;--fb:'Catamaran',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--r:16px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
@@ -37,7 +46,7 @@ header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--b
 @keyframes zoom{to{transform:scale(1)}}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.25) 40%,rgba(0,0,0,.78) 100%)}
 .hero-in{position:relative;z-index:2;max-width:1180px;margin:0 auto;width:100%;padding:0 20px 64px}
-.kicker{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.35);padding:6px 12px;border-radius:999px;margin-bottom:16px}
+.kicker{display:inline-block;font-size:15px;font-weight:600;letter-spacing:.01em;background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;margin-bottom:18px}
 .hero h1{font-family:var(--fd);font-size:clamp(40px,7.4vw,86px);line-height:1;font-weight:700;letter-spacing:-.01em;max-width:13ch}
 .hero .sub{font-size:clamp(17px,2.2vw,21px);max-width:44ch;margin:16px 0 26px;opacity:.95}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
@@ -46,7 +55,8 @@ header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--b
 .hero .ph-tag{top:12px;bottom:auto}
 section{padding:84px 20px}
 .wrap{max-width:1180px;margin:0 auto}
-.eyebrow{color:var(--acc);font-weight:800;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+.eyebrow{color:var(--acc);font-weight:700;font-size:16px;letter-spacing:0;margin-bottom:8px;font-family:var(--fd)}
+.eyebrow:before{content:"";display:inline-block;width:28px;height:2px;background:currentColor;vertical-align:middle;margin-right:10px;transform:translateY(-2px)}
 h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-weight:700;margin-bottom:14px;letter-spacing:-.01em}
 .lead{color:var(--muted);max-width:60ch;font-size:17px}
 .hls{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px}
@@ -69,7 +79,7 @@ h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-
 .it-price{font-weight:800;color:var(--acc);white-space:nowrap}
 .desc{color:var(--muted);font-size:14px;margin-top:2px}
 .orient-note{margin-top:16px;font-size:13.5px;color:var(--muted)}
-.pill{display:inline-block;background:var(--acc2);color:var(--ink);font-weight:800;font-size:11px;padding:3px 8px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase;margin-right:6px}
+.pill{display:inline-block;background:var(--acc2);color:#1a1f3a;font-weight:700;font-size:12px;padding:2px 9px;border-radius:999px;margin-right:6px}
 .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px;margin-top:34px}
 .g{position:relative;overflow:hidden;border-radius:var(--r);background:var(--bg2)}
 .g img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
@@ -77,8 +87,8 @@ h2{font-family:var(--fd);font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-
 .g:nth-child(1){grid-column:span 2;grid-row:span 2}
 .revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px}
 .rev{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.rev-stars{color:#f5b301;letter-spacing:2px;margin-bottom:10px}
-.rev p{font-family:var(--fd);font-size:20px;line-height:1.35}
+.rev .q{display:block;font-family:var(--fd);font-size:64px;line-height:.6;height:28px;color:var(--acc)}
+.rev p{font-family:var(--fd);font-size:21px;line-height:1.35}
 .rev cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:13.5px}
 .rev.empty{grid-column:1/-1;text-align:center;color:var(--muted);border-style:dashed}
 .book{background:var(--ink);color:var(--bg)}
@@ -112,12 +122,24 @@ footer .dator span a{font-weight:700}
 footer .dator svg{border-radius:7px;flex:0 0 auto}
 footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 .mbar{display:none}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero img.bg{animation:none}}
+/* un solo momento de movimiento: la portada entra en secuencia al cargar */
+.hero-in > *{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-in > :nth-child(2){animation-delay:.08s}.hero-in > :nth-child(3){animation-delay:.16s}.hero-in > :nth-child(4){animation-delay:.26s}.hero-in > :nth-child(5){animation-delay:.34s}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none !important;transition:none !important}html{scroll-behavior:auto}}
+.ico{width:18px;height:18px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.btn-line{border:1.5px solid var(--line);color:var(--ink);background:transparent}
+.skip{position:absolute;left:-999px;top:8px;z-index:100;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:8px}.skip:focus{left:8px}
+:focus-visible{outline:3px solid #7d2650;outline-offset:3px;border-radius:6px}
+.now{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14.5px;margin-bottom:12px;padding:6px 12px;border-radius:999px;background:var(--bg2)}
+.now:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--muted)}
+.now.open:before{background:#1f9d55;box-shadow:0 0 0 4px rgba(31,157,85,.18)}
+.hl h3{line-height:1.2}
 @media (max-width:860px){
  .nav-links,.nav .btn{display:none}
- .langs{margin-left:auto}
+ .langs{margin-left:auto;flex:0 0 auto}
+ .nav-in{gap:10px}.nav-in > a:first-child{min-width:0}
+ .logo-txt{white-space:normal;display:block;font-size:clamp(17px,5.2vw,22px);line-height:1.05}
  section{padding:64px 18px}
  .panel{columns:1;padding:18px 18px}
  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
@@ -125,13 +147,47 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  form.bk{grid-template-columns:1fr 1fr;padding:20px}
  .hero{min-height:78vh}
  .hero-in{padding-bottom:44px}
- .mbar{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;background:color-mix(in srgb,var(--ink) 92%,transparent);backdrop-filter:blur(8px);padding:8px;border-radius:18px;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;background:color-mix(in srgb,var(--ink) 92%,transparent);backdrop-filter:blur(8px);padding:8px;border-radius:18px;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
  .mbar a{display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 6px;border-radius:12px;color:var(--bg);text-decoration:none;font-weight:700;font-size:14px}
  .mbar a.main{background:var(--acc);color:var(--on-acc)}
 }
 @media (max-width:380px){.logo-txt{font-size:19px}.mbar a{font-size:13px}}
 
 /* ---- diseños ---- */
+/* elegante: destacados sin cajas, separados por filete; sin emojis */
+.L-elegante .hls{gap:0 40px}
+.L-elegante .hl{background:transparent;border:0;border-top:1px solid var(--ink);border-radius:0;padding:22px 0 0}
+.L-elegante .hl-ico{display:none}
+.L-elegante .hl h3{font-size:25px;font-weight:500}
+/* elegante, portada b: pantalla partida sin velo sobre la foto */
+.hero.duo{display:grid;grid-template-columns:1fr 1.15fr;min-height:min(88vh,780px);color:var(--ink);background:var(--bg);align-items:stretch}
+.hero.duo:after{display:none}
+.L-elegante .hero.duo .hero-in{align-self:center;padding:72px 48px 72px max(20px,calc((100vw - 1180px)/2));text-align:left;margin:0;max-width:none}
+.L-elegante .hero.duo h1{margin:0;max-width:none;font-size:clamp(40px,5vw,70px);overflow-wrap:break-word}.L-elegante .hero.duo .sub{margin-left:0}.L-elegante .hero.duo .ctas{justify-content:flex-start}
+.hero.duo .kicker{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.hero.duo .btn-ghost{color:var(--ink);border-color:var(--ink);background:transparent}
+.hero.duo .rating .star{color:var(--acc)}
+.hero.duo .hero-pic{position:relative;min-height:min(88vh,780px)}
+.hero.duo img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:none;transform:none}
+/* playa, portada b: texto en panel translúcido */
+.L-playa .hero.hv-b{align-items:flex-end}
+.L-playa .hero.hv-b .hero-in > *{max-width:560px}
+.L-playa .hero.hv-b .hero-in{display:flex;flex-direction:column;align-items:flex-start}
+.L-playa .hero.hv-b .hero-in:before{content:"";position:absolute;left:max(8px,calc((100% - 1180px)/2 - 12px));bottom:92px;width:min(620px,calc(100% - 16px));top:auto;height:calc(100% - 92px);max-height:520px;background:color-mix(in srgb,var(--ink) 38%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:28px;z-index:-1}
+.L-playa .hero.hv-b:after{background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.35) 100%)}
+/* barrio: papel con grano y foto tipo polaroid en la portada b */
+.L-barrio,.L-llevar{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero.split.hv-b{grid-template-columns:1fr 1.05fr}
+.hero.split.hv-b .hero-pic{order:-1}
+.L-barrio .hero.split.hv-b img.bg{border-radius:3px;border:12px solid #fff;border-bottom-width:48px;transform:rotate(-2deg);box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+.L-barrio .hero.split.hv-b .sticker{left:auto;right:-14px;bottom:auto;top:-14px;transform:rotate(7deg)}
+.L-barrio .hl{display:grid;grid-template-columns:52px 1fr;column-gap:14px;align-items:start}
+.L-barrio .hl-ico{grid-row:span 2;width:52px;height:52px;border-radius:50%;background:var(--acc2);display:grid;place-items:center;font-size:24px;margin:0}
+/* llevar: destacados como tiques; portada b con la foto en plato redondo */
+.L-llevar .hl{border:2px dashed var(--ink);border-radius:16px;background:var(--card)}
+.L-llevar .hero.split.hv-b img.bg{border-radius:50%;aspect-ratio:1;height:auto;max-height:520px;width:min(100%,520px);margin:0 auto;border:10px solid var(--card);box-shadow:0 0 0 2px var(--ink),0 30px 60px -30px rgba(0,0,0,.55)}
+.L-llevar .hero.split.hv-b h1{font-size:clamp(46px,8.6vw,104px);max-width:none}
+.L-llevar .menu-sec{-webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/28px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/28px 100%;padding-bottom:110px}
 .hero .wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:70px;z-index:3}
 .L-playa .hero-in{padding-bottom:110px}
 .L-playa .hl{border-radius:28px;box-shadow:0 18px 40px -28px rgba(0,0,0,.35);border:0}
@@ -191,10 +247,19 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  .L-elegante .hero-in{padding:80px 18px}
  .L-elegante .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
  .L-playa .hero-in{padding-bottom:90px}
+ .hero.duo{grid-template-columns:1fr;min-height:0}
+ .hero.duo .hero-pic{order:-1;min-height:300px}
+ .L-elegante .hero.duo .hero-in{padding:36px 18px 44px}
+ .hero.split.hv-b{grid-template-columns:1fr}
+ .L-barrio .hero.split.hv-b img.bg{border-width:8px 8px 30px}
+ .L-barrio .hero.split.hv-b .sticker{right:4px;top:auto;bottom:-12px}
+ .L-llevar .hero.split.hv-b img.bg{width:78%;max-height:none}
+ .L-playa .hero.hv-b .hero-in:before{left:8px;right:8px;width:auto;bottom:80px}
 }
 </style>
 </head>
 <body class="L-playa">
+<a class="skip" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a>
 <div class="demo-band"><b>PROPUESTA DE DISEÑO</b> · No es la web oficial de Palace of India · Fotos y precios provisionales</div>
 <header class="nav"><div class="nav-in">
  <a href="#top" style="text-decoration:none"><span class="logo-txt">Palace of India</span></a>
@@ -204,38 +269,34 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 </div></header>
 
 <main id="top">
-<section class="hero" style="padding:0"><img class="bg" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1800&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><div class="hero-in"><span class="kicker" data-t-es="Cocina india · Puerto del Carmen" data-t-en="Indian cuisine · Puerto del Carmen" data-t-de="Indische Küche · Puerto del Carmen">Cocina india · Puerto del Carmen</span><h1>Palace of India</h1><p class="sub" data-t-es="Tandoori, currys y naan recién hecho en Puerto del Carmen, con terraza. Tú eliges el punto de picante." data-t-en="Tandoori, curries and freshly baked naan in Puerto del Carmen, with a terrace. You choose the spice level." data-t-de="Tandoori, Currys und frisches Naan in Puerto del Carmen, mit Terrasse. Sie bestimmen die Schärfe.">Tandoori, currys y naan recién hecho en Puerto del Carmen, con terraza. Tú eliges el punto de picante.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,8</b> <span class="star">★</span> · 867 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div><svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 240 10 480 90 720 50 S 1200 10 1440 50 V90 H0Z" fill="var(--bg)"/></svg></section>
+<section class="hero hv-b" style="padding:0"><img class="bg" src="https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1800&q=70" srcset="https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=1800&q=70 1800w, https://images.unsplash.com/photo-1709756019482-495867d019de?auto=format&fit=crop&w=2400&q=70 2400w" sizes="100vw" alt="Palace of India: Del tandoor a la mesa" fetchpriority="high" decoding="async"><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span><div class="hero-in"><span class="kicker" data-t-es="En la calle Roque Nublo, mirando al puerto" data-t-en="On Calle Roque Nublo, looking over the harbour" data-t-de="In der Calle Roque Nublo, mit Blick auf den Hafen">En la calle Roque Nublo, mirando al puerto</span><h1>Palace of India</h1><p class="sub" data-t-es="Pollo tandoori, rogan josh de cordero y naan recién salido del horno, con el puerto de Puerto del Carmen al otro lado de la ventana." data-t-en="Tandoori chicken, lamb rogan josh and naan fresh from the oven, with Puerto del Carmen harbour just outside the window." data-t-de="Tandoori-Hähnchen, Lamm Rogan Josh und Naan frisch aus dem Ofen – mit dem Hafen von Puerto del Carmen direkt vor dem Fenster.">Pollo tandoori, rogan josh de cordero y naan recién salido del horno, con el puerto de Puerto del Carmen al otro lado de la ventana.</p><div class="ctas"><a class="btn btn-acc" href="#reservar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-ghost" href="#carta"><span data-t-es="Ver la carta" data-t-en="See the menu" data-t-de="Zur Speisekarte">Ver la carta</span></a></div><div class="rating"><b>4,8</b> <span class="star">★</span> · 867 <span data-t-es="opiniones" data-t-en="reviews" data-t-de="Bewertungen">opiniones</span> <span class="src">Google</span></div></div><svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 240 10 480 90 720 50 S 1200 10 1440 50 V90 H0Z" fill="var(--bg)"/></svg></section>
 
 <section><div class="wrap">
- <p class="eyebrow" data-t-es="Sabores de la India" data-t-en="Flavours of India" data-t-de="Aromen Indiens">Sabores de la India</p>
- <h2 data-t-es="Uno de los indios mejor valorados de Lanzarote" data-t-en="One of Lanzarote&#x27;s top-rated Indian restaurants" data-t-de="Einer der bestbewerteten Inder auf Lanzarote">Uno de los indios mejor valorados de Lanzarote</h2>
- <p class="lead" data-t-es="Más de 3.500 opiniones entre Tripadvisor, Google y TheFork nos avalan. Cocina india y balti con currys, tandoori y cordero, picante a tu gusto, terraza y un equipo que te hace sentir como en casa. Muchos clientes repiten cada año: en temporada alta, mejor reservar." data-t-en="Over 3,500 reviews on Tripadvisor, Google and TheFork. Indian and balti cooking with curries, tandoori and lamb, spiced to your taste, a terrace and a team that makes you feel at home. Many guests come back every year, so book ahead in high season." data-t-de="Über 3.500 Bewertungen auf Tripadvisor, Google und TheFork. Indische und Balti-Küche mit Currys, Tandoori und Lamm, nach Ihrem Geschmack gewürzt, Terrasse und ein herzliches Team. Viele Gäste kommen jedes Jahr wieder – in der Hochsaison besser reservieren.">Más de 3.500 opiniones entre Tripadvisor, Google y TheFork nos avalan. Cocina india y balti con currys, tandoori y cordero, picante a tu gusto, terraza y un equipo que te hace sentir como en casa. Muchos clientes repiten cada año: en temporada alta, mejor reservar.</p>
- <div class="hls"><div class="hl reveal"><div class="hl-ico">🔥</div><h3 data-t-es="Horno tandoor" data-t-en="Tandoor oven" data-t-de="Tandoor-Ofen">Horno tandoor</h3><p data-t-es="Pollo tandoori y naan recién hecho." data-t-en="Tandoori chicken and fresh naan." data-t-de="Tandoori-Hähnchen und frisches Naan.">Pollo tandoori y naan recién hecho.</p></div><div class="hl reveal"><div class="hl-ico">🌶️</div><h3 data-t-es="Picante a tu gusto" data-t-en="Spice to your taste" data-t-de="Schärfe nach Wahl">Picante a tu gusto</h3><p data-t-es="De suave a muy picante." data-t-en="From mild to very hot." data-t-de="Von mild bis sehr scharf.">De suave a muy picante.</p></div><div class="hl reveal"><div class="hl-ico">⭐</div><h3 data-t-es="Clientes que repiten" data-t-en="Guests who return" data-t-de="Stammgäste">Clientes que repiten</h3><p data-t-es="Miles de opiniones excelentes." data-t-en="Thousands of excellent reviews." data-t-de="Tausende hervorragende Bewertungen.">Miles de opiniones excelentes.</p></div></div>
+ <p class="eyebrow" data-t-es="Curry con vistas" data-t-en="Curry with a view" data-t-de="Curry mit Aussicht">Curry con vistas</p>
+ <h2 data-t-es="Los que vienen a Lanzarote, vuelven a cenar aquí" data-t-en="People who come back to Lanzarote come back here" data-t-de="Wer nach Lanzarote zurückkommt, kommt auch hierher zurück">Los que vienen a Lanzarote, vuelven a cenar aquí</h2>
+ <p class="lead" data-t-es="Más de 2.600 opiniones en Tripadvisor y casi 900 en Google hablan de lo mismo: currys bien hechos, el picante que tú elijas y un equipo que se acuerda de ti al año siguiente. Del tandoor salen el pollo tikka y el naan de ajo; de la cocina, korma, balti, rogan josh y biryani. Pide mesa junto a la ventana para ver el puerto al caer la tarde y, en temporada alta, reserva antes." data-t-en="Over 2,600 reviews on Tripadvisor and almost 900 on Google say the same thing: curries done properly, the spice level you choose and a team that remembers you the following year. From the tandoor come chicken tikka and garlic naan; from the kitchen, korma, balti, rogan josh and biryani. Ask for a window table to watch the harbour at dusk, and book ahead in high season." data-t-de="Über 2.600 Bewertungen auf Tripadvisor und fast 900 auf Google sagen dasselbe: sorgfältig gekochte Currys, die Schärfe, die Sie wählen, und ein Team, das sich im nächsten Jahr noch an Sie erinnert. Aus dem Tandoor kommen Chicken Tikka und Knoblauch-Naan, aus der Küche Korma, Balti, Rogan Josh und Biryani. Fragen Sie nach einem Fenstertisch mit Blick auf den Hafen in der Abenddämmerung – in der Hochsaison bitte reservieren.">Más de 2.600 opiniones en Tripadvisor y casi 900 en Google hablan de lo mismo: currys bien hechos, el picante que tú elijas y un equipo que se acuerda de ti al año siguiente. Del tandoor salen el pollo tikka y el naan de ajo; de la cocina, korma, balti, rogan josh y biryani. Pide mesa junto a la ventana para ver el puerto al caer la tarde y, en temporada alta, reserva antes.</p>
+ <div class="hls"><div class="hl"><div class="hl-ico" aria-hidden="true">🔥</div><h3 data-t-es="Horno tandoor" data-t-en="Tandoor oven" data-t-de="Tandoor-Ofen">Horno tandoor</h3><p data-t-es="Pollo tandoori y naan de ajo, recién hechos." data-t-en="Tandoori chicken and garlic naan, made to order." data-t-de="Tandoori-Hähnchen und Knoblauch-Naan, frisch zubereitet.">Pollo tandoori y naan de ajo, recién hechos.</p></div><div class="hl"><div class="hl-ico" aria-hidden="true">🌶️</div><h3 data-t-es="Tú eliges el picante" data-t-en="You pick the heat" data-t-de="Sie wählen die Schärfe">Tú eliges el picante</h3><p data-t-es="De korma suave a vindaloo, sin sorpresas." data-t-en="From mild korma to vindaloo, no surprises." data-t-de="Vom milden Korma bis Vindaloo – ohne Überraschungen.">De korma suave a vindaloo, sin sorpresas.</p></div><div class="hl"><div class="hl-ico" aria-hidden="true">⚓</div><h3 data-t-es="Vistas al puerto" data-t-en="Harbour views" data-t-de="Blick auf den Hafen">Vistas al puerto</h3><p data-t-es="Pide mesa junto a la ventana al reservar." data-t-en="Ask for a window table when you book." data-t-de="Fragen Sie bei der Reservierung nach einem Fenstertisch.">Pide mesa junto a la ventana al reservar.</p></div></div>
 </div></section>
 
 <section><div class="wrap">
- <p class="eyebrow"><span data-t-es="El local" data-t-en="The place" data-t-de="Das Lokal">El local</span></p>
- <h2 data-t-es="Del tandoor a tu mesa" data-t-en="From the tandoor to your table" data-t-de="Vom Tandoor auf Ihren Tisch">Del tandoor a tu mesa</h2>
- <div class="gal"><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1772730064970-a7b2735c93b9?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1756821752957-00bfcadc3748?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=70" alt=""><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
+ <h2 data-t-es="Del tandoor a la mesa" data-t-en="From the tandoor to the table" data-t-de="Vom Tandoor auf den Tisch">Del tandoor a la mesa</h2>
+ <div class="gal"><figure class="g"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1697155836250-e3ba3a24fbd5?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1697155836250-e3ba3a24fbd5?auto=format&fit=crop&w=500&q=70 500w, https://images.unsplash.com/photo-1697155836250-e3ba3a24fbd5?auto=format&fit=crop&w=900&q=70 900w, https://images.unsplash.com/photo-1697155836250-e3ba3a24fbd5?auto=format&fit=crop&w=1300&q=70 1300w" sizes="(max-width:860px) 50vw, 33vw" alt="Palace of India: foto 1 de la galería"><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1772730064951-89b427965dbc?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1772730064951-89b427965dbc?auto=format&fit=crop&w=500&q=70 500w, https://images.unsplash.com/photo-1772730064951-89b427965dbc?auto=format&fit=crop&w=900&q=70 900w, https://images.unsplash.com/photo-1772730064951-89b427965dbc?auto=format&fit=crop&w=1300&q=70 1300w" sizes="(max-width:860px) 50vw, 33vw" alt="Palace of India: foto 2 de la galería"><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1708782340372-27ca3c98f874?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1708782340372-27ca3c98f874?auto=format&fit=crop&w=500&q=70 500w, https://images.unsplash.com/photo-1708782340372-27ca3c98f874?auto=format&fit=crop&w=900&q=70 900w, https://images.unsplash.com/photo-1708782340372-27ca3c98f874?auto=format&fit=crop&w=1300&q=70 1300w" sizes="(max-width:860px) 50vw, 33vw" alt="Palace of India: foto 3 de la galería"><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1697155406014-04dc649b0953?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1697155406014-04dc649b0953?auto=format&fit=crop&w=500&q=70 500w, https://images.unsplash.com/photo-1697155406014-04dc649b0953?auto=format&fit=crop&w=900&q=70 900w, https://images.unsplash.com/photo-1697155406014-04dc649b0953?auto=format&fit=crop&w=1300&q=70 1300w" sizes="(max-width:860px) 50vw, 33vw" alt="Palace of India: foto 4 de la galería"><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure><figure class="g"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1710091691802-7dedb8af9a77?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1710091691802-7dedb8af9a77?auto=format&fit=crop&w=500&q=70 500w, https://images.unsplash.com/photo-1710091691802-7dedb8af9a77?auto=format&fit=crop&w=900&q=70 900w, https://images.unsplash.com/photo-1710091691802-7dedb8af9a77?auto=format&fit=crop&w=1300&q=70 1300w" sizes="(max-width:860px) 50vw, 33vw" alt="Palace of India: foto 5 de la galería"><span class="ph-tag"><span data-t-es="Foto de ejemplo" data-t-en="Sample photo" data-t-de="Beispielfoto">Foto de ejemplo</span></span></figure></div>
 </div></section>
 
 <section class="menu-sec" id="carta"><div class="wrap">
- <p class="eyebrow"><span data-t-es="Carta" data-t-en="Menu" data-t-de="Speisekarte">Carta</span></p>
  <h2 data-t-es="Nuestra carta" data-t-en="Our menu" data-t-de="Unsere Speisekarte">Nuestra carta</h2>
- <div class="tabs" role="tablist"><button class="tab on" data-tab="0"><span data-t-es="Entrantes" data-t-en="Starters" data-t-de="Vorspeisen">Entrantes</span></button><button class="tab" data-tab="1"><span data-t-es="Tandoori y currys" data-t-en="Tandoori &amp; curries" data-t-de="Tandoori &amp; Currys">Tandoori y currys</span></button><button class="tab" data-tab="2"><span data-t-es="Acompañamientos y bebidas" data-t-en="Sides &amp; drinks" data-t-de="Beilagen &amp; Getränke">Acompañamientos y bebidas</span></button></div>
- <ul class="panel on" data-panel="0"><li><div class="it-top"><span class="it-name">Onion bhaji</span><span class="dots"></span><span class="it-price">5,50 €</span></div></li><li><div class="it-top"><span class="it-name">Vegetable samosa</span><span class="dots"></span><span class="it-price">5,50 €</span></div></li><li><div class="it-top"><span class="it-name">Chicken tikka</span><span class="dots"></span><span class="it-price">7,50 €</span></div></li></ul><ul class="panel" data-panel="1"><li><div class="it-top"><span class="it-name">Chicken tandoori</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Chicken tikka masala</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Lamb rogan josh</span><span class="dots"></span><span class="it-price">15,50 €</span></div></li><li><div class="it-top"><span class="it-name">Chicken korma</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Lamb balti</span><span class="dots"></span><span class="it-price">15,50 €</span></div></li><li><div class="it-top"><span class="it-name">Vegetable biryani</span><span class="dots"></span><span class="it-price">12,50 €</span></div></li></ul><ul class="panel" data-panel="2"><li><div class="it-top"><span class="it-name">Garlic naan</span><span class="dots"></span><span class="it-price">3,50 €</span></div></li><li><div class="it-top"><span class="it-name">Pilau rice</span><span class="dots"></span><span class="it-price">3,50 €</span></div></li><li><div class="it-top"><span class="it-name">Mango lassi</span><span class="dots"></span><span class="it-price">4,00 €</span></div></li></ul>
+ <div class="tabs" role="tablist"><button class="tab on" data-tab="0" role="tab" id="tab0" aria-controls="pn0" aria-selected="true"><span data-t-es="Entrantes" data-t-en="Starters" data-t-de="Vorspeisen">Entrantes</span></button><button class="tab" data-tab="1" role="tab" id="tab1" aria-controls="pn1" aria-selected="false"><span data-t-es="Tandoori y currys" data-t-en="Tandoori &amp; curries" data-t-de="Tandoori &amp; Currys">Tandoori y currys</span></button><button class="tab" data-tab="2" role="tab" id="tab2" aria-controls="pn2" aria-selected="false"><span data-t-es="Acompañamientos y bebidas" data-t-en="Sides &amp; drinks" data-t-de="Beilagen &amp; Getränke">Acompañamientos y bebidas</span></button></div>
+ <ul class="panel on" data-panel="0" role="tabpanel" id="pn0" aria-labelledby="tab0"><li><div class="it-top"><span class="it-name">Onion bhaji</span><span class="dots"></span><span class="it-price">5,50 €</span></div></li><li><div class="it-top"><span class="it-name">Vegetable samosa</span><span class="dots"></span><span class="it-price">5,50 €</span></div></li><li><div class="it-top"><span class="it-name">Chicken tikka</span><span class="dots"></span><span class="it-price">7,50 €</span></div></li></ul><ul class="panel" data-panel="1" role="tabpanel" id="pn1" aria-labelledby="tab1"><li><div class="it-top"><span class="it-name">Chicken tandoori</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Chicken tikka masala</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Lamb rogan josh</span><span class="dots"></span><span class="it-price">15,50 €</span></div></li><li><div class="it-top"><span class="it-name">Chicken korma</span><span class="dots"></span><span class="it-price">13,50 €</span></div></li><li><div class="it-top"><span class="it-name">Lamb balti</span><span class="dots"></span><span class="it-price">15,50 €</span></div></li><li><div class="it-top"><span class="it-name">Vegetable biryani</span><span class="dots"></span><span class="it-price">12,50 €</span></div></li></ul><ul class="panel" data-panel="2" role="tabpanel" id="pn2" aria-labelledby="tab2"><li><div class="it-top"><span class="it-name">Garlic naan</span><span class="dots"></span><span class="it-price">3,50 €</span></div></li><li><div class="it-top"><span class="it-name">Pilau rice</span><span class="dots"></span><span class="it-price">3,50 €</span></div></li><li><div class="it-top"><span class="it-name">Mango lassi</span><span class="dots"></span><span class="it-price">4,00 €</span></div></li></ul>
  <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span data-t-es="Platos tomados de las opiniones de los clientes; precios de ejemplo hasta tener la carta real." data-t-en="Dishes taken from guest reviews; sample prices until we get the real menu." data-t-de="Gerichte aus Gästebewertungen; Beispielpreise bis zur echten Karte.">Platos tomados de las opiniones de los clientes; precios de ejemplo hasta tener la carta real.</span></p>
 </div></section>
 
 <section id="opiniones"><div class="wrap">
- <p class="eyebrow"><span data-t-es="Opiniones" data-t-en="Reviews" data-t-de="Bewertungen">Opiniones</span></p>
  <h2 data-t-es="Lo que dicen nuestros clientes" data-t-en="What our guests say" data-t-de="Das sagen unsere Gäste">Lo que dicen nuestros clientes</h2>
- <div class="revs"><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“Comida exquisita en un entorno encantador. ¡Lo recomiendo totalmente!”</p><cite>Ray S. · Google</cite></blockquote><blockquote class="rev reveal"><div class="rev-stars">★★★★★</div><p>“De momento el mejor indio que he probado en la isla”</p><cite>Cristina P. · Google</cite></blockquote></div>
+ <div class="revs"><blockquote class="rev"><span class="q" aria-hidden="true">“</span><p>Un lugar precioso, con vistas estupendas al puerto desde las ventanas.</p><cite>Liz B., en Gastroranking</cite></blockquote><blockquote class="rev"><span class="q" aria-hidden="true">“</span><p>De momento el mejor indio que he probado en la isla</p><cite>Cristina P., en Google</cite></blockquote></div>
 </div></section>
 
 <section class="book" id="reservar"><div class="wrap book-grid">
  <div>
-  <p class="eyebrow"><span data-t-es="Reservar" data-t-en="Book" data-t-de="Reservieren">Reservar</span></p>
   <h2 data-t-es="Reserva tu mesa" data-t-en="Book your table" data-t-de="Tisch reservieren">Reserva tu mesa</h2>
   <p class="lead" data-t-es="Elige día, hora y número de personas. Te confirmamos al momento." data-t-en="Choose the day, time and party size. We confirm right away." data-t-de="Wählen Sie Tag, Uhrzeit und Personenzahl. Wir bestätigen sofort.">Elige día, hora y número de personas. Te confirmamos al momento.</p>
  </div>
@@ -244,20 +305,20 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
   <label><span data-t-es="Día" data-t-en="Day" data-t-de="Tag">Día</span><input type="date" name="d" required></label>
   <label><span data-t-es="Hora" data-t-en="Time" data-t-de="Uhrzeit">Hora</span><select name="t"><option>13:00</option><option>13:30</option><option>14:00</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option></select></label>
   <label class="full"><span data-t-es="Personas" data-t-en="Guests" data-t-de="Personen">Personas</span><select name="p"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label>
-  <button class="btn btn-acc" type="submit"><span data-t-es="Enviar reserva" data-t-en="Send booking" data-t-de="Reservierung senden">Enviar reserva</span></button>
+  <button class="btn btn-acc" type="submit"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span data-t-es="Enviar reserva" data-t-en="Send booking" data-t-de="Reservierung senden">Enviar reserva</span></button>
   <p class="bk-msg" id="bkmsg"></p>
  </form>
 </div></section>
 
 <section id="info"><div class="wrap">
- <p class="eyebrow"><span data-t-es="Horario" data-t-en="Hours" data-t-de="Öffnungszeiten">Horario</span></p>
  <h2 data-t-es="Horario y ubicación" data-t-en="Opening hours &amp; location" data-t-de="Öffnungszeiten &amp; Lage">Horario y ubicación</h2>
  <div class="info-grid">
   <div>
+   <p class="now" id="now" hidden></p>
    <table class="hours" id="hours"><tr><td><span data-t-es="Lunes" data-t-en="Monday" data-t-de="Montag">Lunes</span></td><td>13:00–00:00</td></tr><tr><td><span data-t-es="Martes" data-t-en="Tuesday" data-t-de="Dienstag">Martes</span></td><td>13:00–00:00</td></tr><tr><td><span data-t-es="Miércoles" data-t-en="Wednesday" data-t-de="Mittwoch">Miércoles</span></td><td>13:00–00:00</td></tr><tr><td><span data-t-es="Jueves" data-t-en="Thursday" data-t-de="Donnerstag">Jueves</span></td><td>13:00–00:00</td></tr><tr><td><span data-t-es="Viernes" data-t-en="Friday" data-t-de="Freitag">Viernes</span></td><td>13:00–00:00</td></tr><tr><td><span data-t-es="Sábado" data-t-en="Saturday" data-t-de="Samstag">Sábado</span></td><td>13:00–00:00</td></tr><tr><td><span data-t-es="Domingo" data-t-en="Sunday" data-t-de="Sonntag">Domingo</span></td><td>13:00–00:00</td></tr></table>
    <p class="orient-note"><span class="pill"><span data-t-es="Orientativo" data-t-en="Approximate" data-t-de="Richtwert">Orientativo</span></span> <span data-t-es="Horario de ejemplo (solo consta el martes, 13:00–00:00): hay que confirmarlo." data-t-en="Sample hours (only Tuesday 13:00–00:00 is listed): to be confirmed." data-t-de="Beispielzeiten (nur Dienstag 13:00–00:00 bekannt): bitte bestätigen.">Horario de ejemplo (solo consta el martes, 13:00–00:00): hay que confirmarlo.</span></p>
    <p class="addr"><b>C/ Roque Nublo 11</b>Puerto del Carmen, Tías · Lanzarote · <a href="tel:+34602334423">602 33 44 23</a></p>
-   <div class="ctas" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><a class="btn btn-acc" href="https://www.google.com/maps/dir/?api=1&destination=28.920805,-13.671209" target="_blank" rel="noopener">📍 <span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="btn" style="border:1px solid var(--line)" href="tel:+34602334423">📞 <span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a></div>
+   <div class="ctas" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><a class="btn btn-acc" href="https://www.google.com/maps/dir/?api=1&destination=28.920805,-13.671209" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="btn btn-line" href="tel:+34602334423"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a></div>
   </div>
   <div class="map"><iframe loading="lazy" src="https://maps.google.com/maps?q=28.920805,-13.671209&z=16&output=embed" title="Mapa"></iframe></div>
  </div>
@@ -265,8 +326,8 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
 
 <section class="final"><div class="wrap">
  <h2 data-t-es="¿Te esperamos?" data-t-en="See you soon?" data-t-de="Bis bald?">¿Te esperamos?</h2>
- <p class="lead" data-t-es="Reserva tu mesa por WhatsApp, sobre todo en temporada alta." data-t-en="Book your table on WhatsApp, especially in high season." data-t-de="Reservieren Sie per WhatsApp, besonders in der Hochsaison.">Reserva tu mesa por WhatsApp, sobre todo en temporada alta.</p>
- <div class="ctas"><a class="btn btn-w" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-o" href="tel:+34602334423">📞 602 33 44 23</a></div>
+ <p class="lead" data-t-es="Reserva por WhatsApp y pide mesa junto a la ventana." data-t-en="Book on WhatsApp and ask for a window table." data-t-de="Reservieren Sie per WhatsApp und fragen Sie nach einem Fenstertisch.">Reserva por WhatsApp y pide mesa junto a la ventana.</p>
+ <div class="ctas"><a class="btn btn-w" href="#reservar"><span data-t-es="Reservar mesa" data-t-en="Book a table" data-t-de="Tisch reservieren">Reservar mesa</span></a><a class="btn btn-o" href="tel:+34602334423"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>602 33 44 23</a></div>
 </div></section>
 </main>
 
@@ -276,21 +337,23 @@ footer .dator-note{font-size:12px;margin-top:6px;opacity:.8}
  <div class="dator-note">Propuesta de diseño: no es la web oficial del negocio.</div>
 </footer>
 
-<nav class="mbar"><a href="tel:+34602334423">📞 <span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=28.920805,-13.671209" target="_blank" rel="noopener">📍 <span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="main" href="#reservar"><span data-t-es="Reservar" data-t-en="Book" data-t-de="Reservieren">Reservar</span></a></nav>
+<nav class="mbar" aria-label="Acciones rápidas"><a href="tel:+34602334423"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-t-es="Llamar" data-t-en="Call" data-t-de="Anrufen">Llamar</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=28.920805,-13.671209" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-t-es="Cómo llegar" data-t-en="Directions" data-t-de="Route">Cómo llegar</span></a><a class="main" href="#reservar"><span data-t-es="Reservar" data-t-en="Book" data-t-de="Reservieren">Reservar</span></a></nav>
 
 <script>
 const CFG={"wa": "34602334423", "tel": "+34602334423", "name": "Palace of India", "multi": true, "msg": "quiero reservar mesa: {p} personas, el {d} a las {t}. Nombre: {n}"};
 let LANG='es';
+const HRS_OK=false;
+const NOWX={"es": {"open": "Abierto ahora · cierra a las", "later": "Hoy abre a las", "closed": "Ahora cerrado"}, "en": {"open": "Open now · closes at", "later": "Opens today at", "closed": "Closed now"}, "de": {"open": "Jetzt geöffnet · bis", "later": "Öffnet heute um", "closed": "Jetzt geschlossen"}};
 const UIX={"es": {"f_ok_wa": "Se abrir\u00e1 WhatsApp con tu reserva lista para enviar.", "f_ok_call": "Para reservar, ll\u00e1manos:"}, "en": {"f_ok_wa": "WhatsApp will open with your booking ready to send.", "f_ok_call": "To book, call us:"}, "de": {"f_ok_wa": "WhatsApp \u00f6ffnet sich mit Ihrer Reservierung.", "f_ok_call": "Zum Reservieren rufen Sie uns an:"}};
 function setLang(l){LANG=l;document.documentElement.lang=l;
  document.querySelectorAll('[data-t-'+l+']').forEach(e=>e.textContent=e.getAttribute('data-t-'+l));
- document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.lang===l));
+ document.querySelectorAll('.langs button').forEach(b=>{b.classList.toggle('on',b.dataset.lang===l);b.setAttribute('aria-pressed',b.dataset.lang===l)});
  try{localStorage.setItem('lang',l)}catch(e){}}
 document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
 if(CFG.multi){let l=null;try{l=localStorage.getItem('lang')}catch(e){}
  if(!l){const n=(navigator.language||'es').slice(0,2);l=['en','de'].includes(n)?n:'es'} if(l!=='es')setLang(l);}
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
- document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
+ document.querySelectorAll('.tab').forEach(x=>{x.classList.toggle('on',x===t);x.setAttribute('aria-selected',x===t)});
  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));});
 const td=(new Date().getDay()+6)%7;const hr=document.querySelectorAll('#hours tr')[td];if(hr)hr.classList.add('today');
 const di=document.querySelector('input[type=date]');if(di){const n=new Date();di.min=n.toISOString().slice(0,10);di.value=di.min}
@@ -298,8 +361,12 @@ document.getElementById('bk').addEventListener('submit',e=>{e.preventDefault();c
  const txt=`Hola ${CFG.name}, `+CFG.msg.replace('{p}',f.get('p')).replace('{d}',f.get('d')).replace('{t}',f.get('t')).replace('{n}',f.get('n'));
  if(CFG.wa){m.textContent=UIX[LANG].f_ok_wa;window.open('https://wa.me/'+CFG.wa+'?text='+encodeURIComponent(txt),'_blank');}
  else{m.innerHTML=UIX[LANG].f_ok_call+' <a href="tel:'+CFG.tel+'"><b>'+CFG.tel+'</b></a>';}});
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const HRS=["13:00\u201300:00", "13:00\u201300:00", "13:00\u201300:00", "13:00\u201300:00", "13:00\u201300:00", "13:00\u201300:00", "13:00\u201300:00"];
+(function(){const el=document.getElementById('now');if(!el||!HRS_OK)return;const n=new Date(),i=(n.getDay()+6)%7,m=n.getHours()*60+n.getMinutes();
+ const tr=s=>(s||'').split('·').map(x=>x.trim().split(/[–-]/).map(h=>{const [a,b]=h.trim().split(':').map(Number);return a*60+(b||0)})).filter(r=>r.length===2&&!isNaN(r[0])&&!isNaN(r[1]));
+ const f=x=>String(Math.floor(x/60)%24).padStart(2,'0')+':'+String(x%60).padStart(2,'0');const L=NOWX[LANG]||NOWX.es;
+ for(const [a,b0] of tr(HRS[i])){const b=b0<=a?b0+1440:b0;if(m>=a&&m<b){el.textContent=L.open+' '+f(b);el.className='now open';el.hidden=false;return}if(m<a){el.textContent=L.later+' '+f(a);el.className='now';el.hidden=false;return}}
+ el.textContent=L.closed;el.className='now';el.hidden=false;})();
 </script>
 </body>
 </html>
