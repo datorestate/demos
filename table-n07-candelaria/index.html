@@ -360,7 +360,7 @@ const di=document.querySelector('input[type=date]');if(di){const n=new Date();di
 document.getElementById('bk').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const m=document.getElementById('bkmsg');
  const txt=`Hola ${CFG.name}, `+CFG.msg.replace('{p}',f.get('p')).replace('{d}',f.get('d')).replace('{t}',f.get('t')).replace('{n}',f.get('n'));
  if(CFG.wa){m.textContent=UIX[LANG].f_ok_wa;window.open('https://wa.me/'+CFG.wa+'?text='+encodeURIComponent(txt),'_blank');}
- else{m.innerHTML=UIX[LANG].f_ok_call+' <a href="tel:'+CFG.tel+'"><b>'+CFG.tel+'</b></a>';}});
+ else if(CFG.tel){m.innerHTML=UIX[LANG].f_ok_call+' <a href="tel:'+CFG.tel+'"><b>'+CFG.tel+'</b></a>';}else{m.textContent='✓';}});
 const HRS=[null, "12:00\u201323:00", "12:00\u201323:00", "12:00\u201323:00", "12:00\u201300:00", "12:00\u201300:00", "12:00\u201322:00"];
 (function(){const el=document.getElementById('now');if(!el||!HRS_OK)return;const n=new Date(),i=(n.getDay()+6)%7,m=n.getHours()*60+n.getMinutes();
  const tr=s=>(s||'').split('·').map(x=>x.trim().split(/[–-]/).map(h=>{const [a,b]=h.trim().split(':').map(Number);return a*60+(b||0)})).filter(r=>r.length===2&&!isNaN(r[0])&&!isNaN(r[1]));
